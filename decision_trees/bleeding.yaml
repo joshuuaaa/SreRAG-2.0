@@ -1,0 +1,129 @@
+version: "1.0"
+id: severe_bleeding
+priority: critical  # Overrides LLM - safety first!
+
+metadata:
+  name: "Severe Bleeding Response"
+  source: "WHO Emergency Care Guidelines + Red Cross"
+  last_updated: "2025-01-01"
+
+nodes:
+  - id: initial_assessment
+    type: question
+    prompt: "Is the person bleeding severely? (Blood spurting, pooling, or soaking through bandages)"
+    options:
+      - answer: "yes"
+        next: severe_bleeding_response
+      - answer: "no"
+        next: minor_bleeding_care
+      - answer: "unsure"
+        next: assess_severity
+
+  - id: assess_severity
+    type: instruction
+    prompt: "Let's assess the severity together"
+    details:
+      - "Look at the wound - is blood actively flowing or spurting?"
+      - "Is blood soaking through cloth within seconds?"
+      - "Is there a large pool of blood forming?"
+    next: initial_assessment
+
+  - id: severe_bleeding_response
+    type: instruction
+    priority: critical
+    prompt: "This is severe bleeding. Follow these steps immediately"
+    rag_tags: ["bleeding_control", "hemorrhage", "WHO", "direct_pressure"]
+    rag_filter:
+      category: "bleeding"
+      criticality: "high"
+    steps:
+      - id: call_help
+        text: "Call emergency services NOW (or have someone else call)"
+        duration_seconds: 0
+        
+      - id: direct_pressure
+        text: "Apply FIRM, DIRECT pressure to the wound with the cleanest cloth available"
+        duration_seconds: 600  # 10 minutes minimum
+        details:
+          - "Use both hands if needed"
+          - "Press down hard - don't be gentle"
+          - "Do NOT remove the cloth to check - keep pressure constant"
+          
+      - id: elevate
+        text: "If possible, elevate the injured limb ABOVE the heart level"
+        details:
+          - "Only if no broken bones suspected"
+          - "Keep pressure on while elevating"
+          
+      - id: embedded_objects
+        text: "CRITICAL: Do NOT remove any embedded objects (glass, metal, etc.)"
+        details:
+          - "Leave them in place"
+          - "Apply pressure around the object, not on it"
+          
+      - id: additional_cloth
+        text: "If blood soaks through, add MORE cloth on top - do NOT remove the first layer"
+        
+      - id: monitor
+        text: "Keep pressure for at least 10 minutes without checking"
+        next: check_bleeding_stopped
+
+  - id: check_bleeding_stopped
+    type: question
+    prompt: "After 10+ minutes of pressure, has the bleeding stopped or significantly slowed?"
+    options:
+      - answer: "yes"
+        next: bleeding_controlled
+      - answer: "no"
+        next: continue_pressure
+      - answer: "bleeding_worse"
+        next: escalate_emergency
+
+  - id: bleeding_controlled
+    type: instruction
+    prompt: "Good! The bleeding is controlled. Continue care"
+    rag_tags: ["wound_care", "bandaging", "shock_prevention"]
+    steps:
+      - text: "Keep pressure on and secure with a bandage"
+      - text: "Do NOT remove the cloth - wrap over it"
+      - text: "Monitor for signs of shock (pale skin, rapid pulse, confusion)"
+      - text: "Keep the person warm and lying down"
+      - text: "Wait for emergency services - do NOT give food or water"
+    next: end
+
+  - id: continue_pressure
+    type: instruction
+    prompt: "Continue applying firm pressure"
+    details:
+      - "Check that you're pressing on the exact bleeding point"
+      - "Use your full body weight if needed"
+      - "Have someone else take over if your arms tire"
+    next: severe_bleeding_response  # Loop back to maintain pressure
+
+  - id: escalate_emergency
+    type: instruction
+    priority: critical
+    prompt: "URGENT: Bleeding is life-threatening"
+    rag_tags: ["tourniquet", "pressure_points", "emergency"]
+    steps:
+      - text: "Continue direct pressure - do NOT stop"
+      - text: "If limb bleeding and pressure fails, consider tourniquet (only if trained)"
+      - text: "Ensure emergency services are called and know it's severe bleeding"
+      - text: "Stay with the person - keep them talking if conscious"
+    next: end
+
+  - id: minor_bleeding_care
+    type: instruction
+    prompt: "This appears to be minor bleeding. Here's how to care for it"
+    rag_tags: ["wound_care", "minor_bleeding", "cleaning"]
+    steps:
+      - text: "Clean the wound with clean water (avoid soap inside the wound)"
+      - text: "Apply gentle pressure with a clean cloth for 5-10 minutes"
+      - text: "Once stopped, apply antibiotic ointment if available"
+      - text: "Cover with a sterile bandage"
+      - text: "Watch for signs of infection (redness, swelling, pus)"
+    next: end
+
+  - id: end
+    type: end
+    prompt: "You've done a great job. Stay with the person until help arrives."

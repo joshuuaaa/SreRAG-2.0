@@ -1,0 +1,25 @@
+# Core dependencies
+pyyaml>=6.0.1
+numpy>=1.24.0
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+llama-cpp-python>=0.2.20
+
+# Audio processing
+sounddevice>=0.4.6
+soundfile>=0.12.1
+pyaudio>=0.2.13
+
+# Document processing
+pypdf>=3.15.0
+python-docx>=1.1.0
+markdown>=3.4.0
+
+# Utilities
+tqdm>=4.66.0
+python-dotenv>=1.0.0
+
+# Development
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0

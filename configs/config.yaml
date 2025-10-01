@@ -1,0 +1,67 @@
+# Crisis Assistant Configuration
+version: "1.0"
+
+# Large Language Model Settings
+llm:
+  model_path: "models/llm/Phi-3-mini-4k-instruct-q4.gguf"
+  n_ctx: 2048          # Context window size
+  n_threads: 4         # CPU threads (adjust for your system)
+  n_gpu_layers: 0      # Set to 0 for CPU-only, increase if you have GPU
+  temperature: 0.3     # Lower = more deterministic (good for medical advice)
+  max_tokens: 300      # Max response length
+  top_p: 0.9
+  repeat_penalty: 1.1
+
+# RAG (Retrieval-Augmented Generation) Settings
+rag:
+  index_path: "data/index"
+  embedding_model: "BAAI/bge-small-en-v1.5"  # Lightweight embeddings
+  top_k: 3                    # Number of documents to retrieve
+  chunk_size: 512             # Characters per chunk
+  chunk_overlap: 50           # Overlap between chunks
+  similarity_threshold: 0.5   # Minimum similarity score (0-1)
+
+# Decision Tree Settings
+decision_trees:
+  path: "decision_trees"
+  priority_override: true  # Critical trees always override LLM
+  
+# Audio Settings
+audio:
+  enabled: false  # Set to true for voice mode
+  
+  # Speech-to-Text (Whisper)
+  whisper:
+    model_path: "models/whisper/ggml-tiny.en.bin"
+    binary_path: "whisper.cpp/main"  # Path to whisper.cpp binary
+    language: "en"
+    n_threads: 4
+    
+  # Text-to-Speech (Piper)
+  piper:
+    model_path: "models/piper/en_US-lessac-medium.onnx"
+    binary_path: "piper"  # Path to piper binary
+    speed: 0.9  # Slightly slower for clarity (0.5-2.0)
+    
+  # Microphone settings
+  microphone:
+    sample_rate: 16000  # Hz (whisper expects 16kHz)
+    channels: 1         # Mono
+    record_duration: 5  # Seconds to record after activation
+    
+  # Wake word (optional - requires Porcupine/Snowboy)
+  wake_word:
+    enabled: false
+    keyword: "hey crisis"
+
+# System Settings
+system:
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_file: "logs/crisis-assistant.log"
+  offline_mode: true  # Force offline operation
+  
+# Safety Settings
+safety:
+  always_suggest_emergency_services: true
+  disclaimer_on_start: true
+  max_conversation_length: 20  # Prevent infinite loops
