@@ -3,7 +3,7 @@ version: "1.0"
 
 # Large Language Model Settings
 llm:
-  model_path: models copy/llm/Phi-3-mini-4k-instruct-Q4_K_M.gguf
+  model_path: "models copy/llm/Phi-3-mini-4k-instruct-Q4_K_M.gguf"
   n_ctx: 4096
   n_threads: 4
   n_gpu_layers: 0
@@ -20,53 +20,56 @@ app:
 
 rag:
   index_path: "data/index"
-  embedding_model: "BAAI/bge-small-en-v1.5"  # Lightweight embeddings
-  top_k: 3                    # Number of documents to retrieve
-  chunk_size: 512             # Characters per chunk
-  chunk_overlap: 50           # Overlap between chunks
-  similarity_threshold: 0.5   # Minimum similarity score (0-1)
-
-# Decision Tree Settings
-decision_trees:
+  embedding_model: "BAAI/bge-small-en-v1.5"   # fast on CPU (384-d). For higher quality: BAAI/bge-base-en-v1.5 (768-d)
+  normalize_embeddings: true
+  chunk_tokens: 300
+  chunk_overlap_tokens: 40
+  top_k: 5              # final results to return
+  candidate_k: 40       # number to retrieve before reranking/fusion
+  use_hybrid: true      # dense + BM25 with Reciprocal Rank Fusion
+  vector_index: "hnsw"  # hnswlib for CPU-friendly ANN
+  hnsw:
+    M: 32
+    ef_construction: 200
+    ef_search: 128
+  reranker:
+    enabled: true
+    model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    top_n: 5
+  similarity_threshold: 0.45
+decision:
   path: "decision_trees"
   priority_override: true  # Critical trees always override LLM
-  
-# Audio Settings
+
 audio:
   enabled: false  # Set to true for voice mode
-  
-  # Speech-to-Text (Whisper)
+
   whisper:
     model_path: "models/whisper/ggml-tiny.en.bin"
-    binary_path: "whisper.cpp/main"  # Path to whisper.cpp binary
+    binary_path: "whisper.cpp/main"
     language: "en"
     n_threads: 4
-    
-  # Text-to-Speech (Piper)
+
   piper:
     model_path: "models/piper/en_US-lessac-medium.onnx"
-    binary_path: "piper"  # Path to piper binary
-    speed: 0.9  # Slightly slower for clarity (0.5-2.0)
-    
-  # Microphone settings
+    binary_path: "piper"
+    speed: 0.9
+
   microphone:
-    sample_rate: 16000  # Hz (whisper expects 16kHz)
-    channels: 1         # Mono
-    record_duration: 5  # Seconds to record after activation
-    
-  # Wake word (optional - requires Porcupine/Snowboy)
+    sample_rate: 16000
+    channels: 1
+    record_duration: 5
+
   wake_word:
     enabled: false
     keyword: "hey crisis"
 
-# System Settings
 system:
-  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_level: "INFO"
   log_file: "logs/crisis-assistant.log"
-  offline_mode: true  # Force offline operation
-  
-# Safety Settings
+  offline_mode: true
+
 safety:
   always_suggest_emergency_services: true
   disclaimer_on_start: true
-  max_conversation_length: 20  # Prevent infinite loops
+  max_conversation_length: 20

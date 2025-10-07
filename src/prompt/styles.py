@@ -1,80 +1,80 @@
-from typing import List, Optional
+from typing import Optional
 
-DEFAULT_SYSTEM = (
-    "You are a calm, reassuring first-aid assistant. You speak naturally and briefly, "
-    "avoid medical jargon unless necessary, and give practical, safe guidance."
-)
-
-def _section(title: str, text: str) -> str:
-    return f"\n{title}:\n{text.strip()}\n"
-
-def warm_style(user_query: str, rag_block: str, protocol_block: str) -> str:
-    intro = (
-        "Start with one short, empathetic sentence acknowledging the situation. "
-        "Then give clear, simple steps. Keep sentences short. "
-        "If there is any chance of life-threatening danger, say to call emergency services. "
-        "End with one brief check question to confirm the person’s status."
-    )
-    parts: List[str] = [
-        f"<|system|>\n{DEFAULT_SYSTEM}<|end|>",
-        _section("INSTRUCTIONS", intro),
-    ]
-    if protocol_block:
-        parts.append(_section("MEDICAL PROTOCOL (follow exactly)", protocol_block))
-    if rag_block:
-        parts.append(_section("REFERENCES (use as facts)", rag_block))
-    parts.append(_section("QUESTION", user_query))
-    parts.append("\nAnswer in this structure:\n"
-                 "- 1 short empathetic sentence\n"
-                 "- 3–6 concise steps (numbered)\n"
-                 "- 1 brief reassurance + when to call emergency services\n"
-                 "- 1 short follow‑up question\n")
-    parts.append("<|assistant|>\n")
-    return "\n".join(parts)
-
-def coach_style(user_query: str, rag_block: str, protocol_block: str) -> str:
-    intro = (
-        "Use a motivating coaching tone. Keep it friendly and direct. "
-        "Use bullets instead of numbers if steps are fewer than four."
-    )
-    parts: List[str] = [
-        f"<|system|>\n{DEFAULT_SYSTEM}<|end|>",
-        _section("INSTRUCTIONS", intro),
-    ]
-    if protocol_block:
-        parts.append(_section("MEDICAL PROTOCOL (follow exactly)", protocol_block))
-    if rag_block:
-        parts.append(_section("REFERENCES (use as facts)", rag_block))
-    parts.append(_section("QUESTION", user_query))
-    parts.append("\nAnswer with: brief friendly line, 3–6 steps (bulleted if short), reassurance, one follow‑up question.\n")
-    parts.append("<|assistant|>\n")
-    return "\n".join(parts)
-
-def plain_style(user_query: str, rag_block: str, protocol_block: str) -> str:
-    intro = "Be concise and neutral. Keep steps short. No extra filler."
-    parts: List[str] = [
-        f"<|system|>\n{DEFAULT_SYSTEM}<|end|>",
-        _section("INSTRUCTIONS", intro),
-    ]
-    if protocol_block:
-        parts.append(_section("MEDICAL PROTOCOL (follow exactly)", protocol_block))
-    if rag_block:
-        parts.append(_section("REFERENCES (use as facts)", rag_block))
-    parts.append(_section("QUESTION", user_query))
-    parts.append("\nAnswer with 3–6 steps and a brief closing.\n")
-    parts.append("<|assistant|>\n")
-    return "\n".join(parts)
-
-def build_prompt(user_query: str,
-                 rag_context: str = "",
-                 decision_text: str = "",
-                 style: str = "warm") -> str:
-    """Return a Phi-3 compatible chat prompt with the selected tone."""
-    rag_block = rag_context.strip()
-    protocol_block = decision_text.strip()
+def _style_guidelines(style: str) -> str:
     style = (style or "warm").lower()
     if style == "coach":
-        return coach_style(user_query, rag_block, protocol_block)
-    if style == "plain":
-        return plain_style(user_query, rag_block, protocol_block)
-    return warm_style(user_query, rag_block, protocol_block)
+        return (
+            "Tone: supportive coach; confident, motivating, plain language.\n"
+            "Style: short sentences; direct commands; 2nd person (“you”). Avoid jargon."
+        )
+    if style in ("pro", "professional"):
+        return (
+            "Tone: professional first-aid instructor; precise and calm.\n"
+            "Style: concise, technical terms when needed with brief explanations."
+        )
+    # default warm
+    return (
+        "Tone: warm, calm, and reassuring.\n"
+        "Style: friendly plain language; short, direct steps; avoid jargon unless explained."
+    )
+
+def build_prompt(
+    user_query: str,
+    rag_context: str = "",
+    decision_text: str = "",
+    style: str = "warm",
+) -> str:
+    """
+    Build a single-string prompt for an instruction-tuned model.
+    Priorities:
+      1) Decision protocol if available (authoritative)
+      2) RAG references (grounding)
+      3) Human tone + emergency guardrails
+    Output requirements:
+      - 1 empathetic opening sentence
+      - 4–8 concise, numbered action steps
+      - 'When to call emergency services' if applicable
+      - 1 check-in or clarifying question at the end (only one)
+      - No speculation beyond provided references/protocols
+    """
+    style_text = _style_guidelines(style)
+
+    refs_block = ""
+    if rag_context and rag_context.strip():
+        refs_block = f"REFERENCES (authoritative excerpts to base your answer on):\n{rag_context.strip()}\n"
+
+    protocol_block = ""
+    if decision_text and decision_text.strip():
+        protocol_block = (
+            "PROTOCOL (follow as primary instructions; use exact steps when applicable):\n"
+            f"{decision_text.strip()}\n"
+        )
+
+    # Clear, enforceable rules that keep the answer grounded and human
+    rules = (
+        "Follow these rules strictly:\n"
+        "- Prioritize PROTOCOL if provided. Use it as the main steps before anything else.\n"
+        "- Use REFERENCES to support/clarify steps. If information is missing, ask one clarifying question rather than guessing.\n"
+        "- Keep it practical and human: short sentences, present tense, imperative mood.\n"
+        "- Start with one brief reassurance sentence.\n"
+        "- Provide 4–8 numbered steps. If an object is embedded, explicitly say not to remove it.\n"
+        "- Include a short 'When to call emergency services' section if risk is high or bleeding persists after firm pressure for 10 minutes.\n"
+        "- End with exactly one question (a check-in or key clarifier).\n"
+        "- Do not include citations in the text; the app will show sources separately.\n"
+        "- If the references/protocol do not cover the question, say what is missing and ask a clarifying question."
+    )
+
+    # The model sees all context but should only output the final answer
+    prompt = f"""You are an advanced, detail-oriented first-aid instructor for crisis assistance.
+Your job is to provide clear, human, and safe guidance grounded in the provided protocol and references.
+
+{style_text}
+
+{rules}
+
+USER QUESTION:
+{user_query.strip()}
+
+{protocol_block}{refs_block}
+Now produce the final answer only, following the rules above."""
+    return prompt

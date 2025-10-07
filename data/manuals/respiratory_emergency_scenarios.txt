@@ -1,0 +1,672 @@
+WHO Emergency Care Guidelines: Respiratory Emergency Scenarios Database
+
+TABLE OF CONTENTS
+1. AIRWAY OBSTRUCTION SCENARIOS
+2. ASTHMA AND COPD EXACERBATIONS
+3. PNEUMONIA AND INFECTION
+4. PNEUMOTHORAX SCENARIOS
+5. PULMONARY EDEMA
+6. RESPIRATORY FAILURE
+7. PEDIATRIC RESPIRATORY EMERGENCIES
+8. SPECIAL RESPIRATORY SITUATIONS
+
+================================================================================
+1. AIRWAY OBSTRUCTION SCENARIOS
+================================================================================
+
+SCENARIO 1A: COMPLETE AIRWAY OBSTRUCTION (CHOKING)
+Conscious Adult/Child:
+Signs:
+- Unable to speak or cough
+- Clutching throat (universal choking sign)
+- Cyanosis
+- Unable to breathe
+
+Treatment:
+1. Encourage coughing if partial obstruction
+2. Back blows (5) between shoulder blades
+3. Abdominal thrusts (Heimlich maneuver) - 5 times
+4. Alternate back blows and abdominal thrusts
+5. Continue until object expelled or unconscious
+
+Unconscious Adult/Child:
+1. Call for help/EMS
+2. Begin CPR
+3. Before rescue breaths, look in mouth
+4. Remove visible objects with finger sweep
+5. Continue CPR until help arrives
+
+Infant Choking (<1 year):
+1. 5 back blows with heel of hand
+2. 5 chest thrusts with 2 fingers
+3. Check mouth for visible object
+4. Repeat cycle
+5. Begin CPR if unconscious
+
+SCENARIO 1B: PARTIAL AIRWAY OBSTRUCTION
+Good Air Exchange:
+- Can speak/cry
+- Strong cough
+- Pink color maintained
+
+Treatment:
+1. Encourage coughing
+2. Do NOT interfere
+3. Monitor closely
+4. Prepare for complete obstruction
+5. Consider medical evaluation
+
+Poor Air Exchange:
+- Weak/ineffective cough
+- Stridor
+- Difficulty breathing
+- Cyanosis
+
+Treatment:
+1. Treat as complete obstruction
+2. Back blows and thrusts
+3. Prepare for advanced airway
+4. Consider surgical airway
+5. Emergency medical care
+
+SCENARIO 1C: FOREIGN BODY ASPIRATION
+Risk Factors:
+- Children 1-4 years old
+- Nuts, grapes, hot dogs, toys
+- Elderly with dentures
+- Intoxicated individuals
+- Neurological impairment
+
+Clinical Presentation:
+- Sudden onset coughing
+- Wheezing
+- Stridor
+- Voice changes
+- Recurrent pneumonia
+
+Management:
+1. Direct laryngoscopy
+2. Magill forceps removal
+3. Flexible bronchoscopy
+4. Rigid bronchoscopy
+5. Surgical removal if needed
+
+SCENARIO 1D: ANGIOEDEMA WITH AIRWAY COMPROMISE
+Causes:
+- ACE inhibitor induced
+- Allergic reaction
+- Hereditary angioedema
+- Idiopathic
+
+Signs:
+- Lip/tongue swelling
+- Voice changes
+- Stridor
+- Difficulty swallowing
+- Throat tightness
+
+Emergency Treatment:
+1. Epinephrine 0.3-0.5mg IM
+2. H1 antihistamine (diphenhydramine 25-50mg)
+3. H2 antihistamine (ranitidine 50mg)
+4. Corticosteroids (methylprednisolone 125mg)
+5. Prepare for emergent airway
+
+================================================================================
+2. ASTHMA AND COPD EXACERBATIONS
+================================================================================
+
+SCENARIO 2A: SEVERE ASTHMA EXACERBATION
+Severity Assessment:
+Mild-Moderate:
+- Speaks in phrases
+- Some increase in respiratory rate
+- Accessory muscle use
+- PEFR >50% predicted
+
+Severe:
+- Speaks in words only
+- Respiratory rate >30
+- Significant accessory muscle use
+- PEFR <50% predicted
+
+Life-threatening:
+- Unable to speak
+- Silent chest
+- Cyanosis
+- Exhaustion
+- PEFR <33% predicted
+
+Treatment Protocol:
+1. High-flow oxygen
+2. Bronchodilators:
+   - Albuterol 2.5-5mg nebulized q20min x3
+   - Ipratropium 0.5mg nebulized x3 doses
+3. Corticosteroids:
+   - Prednisolone 40-50mg PO or
+   - Methylprednisolone 125mg IV
+4. Magnesium sulfate 2g IV over 20min
+5. Consider intubation if failing
+
+SCENARIO 2B: STATUS ASTHMATICUS
+Definition: Severe asthma unresponsive to standard therapy
+Duration: >24 hours or requiring ICU care
+
+Additional Treatments:
+1. Continuous albuterol nebulization
+2. IV beta-agonists (terbutaline)
+3. Aminophylline infusion
+4. Ketamine for sedation/bronchodilation
+5. Mechanical ventilation considerations
+
+Ventilator Settings:
+- Low tidal volumes (6-8 mL/kg)
+- Low respiratory rate (8-10/min)
+- Long expiratory time
+- Permissive hypercapnia
+- PEEP 5-8 cmH2O
+
+SCENARIO 2C: COPD EXACERBATION
+Precipitating Factors:
+- Respiratory infection
+- Air pollution
+- Medication noncompliance
+- Heart failure
+- Pulmonary embolism
+
+Assessment:
+- Increased dyspnea
+- Increased sputum production
+- Change in sputum color
+- Increased cough
+- Fever
+
+Treatment:
+1. Controlled oxygen (target SpO2 88-92%)
+2. Bronchodilators:
+   - Albuterol and ipratropium
+   - Consider aminophylline
+3. Corticosteroids:
+   - Prednisolone 30-40mg daily x 5 days
+4. Antibiotics if bacterial infection
+5. Non-invasive ventilation
+
+SCENARIO 2D: ACUTE RESPIRATORY ACIDOSIS
+pH <7.30 with elevated CO2
+
+Causes:
+- COPD exacerbation
+- Neuromuscular disease
+- Drug overdose
+- Chest wall deformity
+
+Treatment:
+1. Non-invasive positive pressure ventilation
+2. BiPAP settings: IPAP 12-20, EPAP 5-8
+3. Monitor blood gases
+4. Intubation if NIV fails
+5. Treat underlying cause
+
+================================================================================
+3. PNEUMONIA AND INFECTION
+================================================================================
+
+SCENARIO 3A: COMMUNITY-ACQUIRED PNEUMONIA
+Typical Presentation:
+- Fever, chills
+- Productive cough
+- Pleuritic chest pain
+- Dyspnea
+
+Atypical Presentation:
+- Dry cough
+- Headache
+- Myalgias
+- GI symptoms
+
+Severity Assessment (CURB-65):
+- Confusion
+- Urea >7 mmol/L
+- Respiratory rate ≥30
+- Blood pressure <90/60
+- Age ≥65
+
+Score 0-1: Outpatient treatment
+Score 2: Hospital admission
+Score 3-5: ICU consideration
+
+Antibiotic Selection:
+Outpatient:
+- Amoxicillin 1g TID or
+- Azithromycin 500mg daily or
+- Doxycycline 100mg BID
+
+Inpatient:
+- Ceftriaxone + azithromycin or
+- Fluoroquinolone monotherapy
+
+ICU:
+- Beta-lactam + macrolide or
+- Beta-lactam + fluoroquinolone
+
+SCENARIO 3B: SEVERE PNEUMONIA/SEPSIS
+SIRS Criteria (≥2):
+- Temperature >38°C or <36°C
+- Heart rate >90
+- Respiratory rate >20
+- WBC >12,000 or <4,000
+
+Sepsis Management:
+1. Early recognition
+2. Blood cultures before antibiotics
+3. Broad-spectrum antibiotics within 1 hour
+4. IV fluid resuscitation
+5. Vasopressors if needed
+
+Septic Shock:
+- Hypotension despite adequate fluids
+- Lactate >2 mmol/L
+- Organ dysfunction
+
+Treatment:
+1. Aggressive fluid resuscitation
+2. Norepinephrine first-line vasopressor
+3. Corticosteroids if refractory shock
+4. Source control
+5. Supportive care
+
+SCENARIO 3C: VENTILATOR-ASSOCIATED PNEUMONIA
+Risk Factors:
+- Mechanical ventilation >48 hours
+- Aspiration
+- Immunosuppression
+- Previous antibiotics
+
+Prevention:
+1. Head of bed elevation 30-45°
+2. Daily sedation interruption
+3. Oral care with chlorhexidine
+4. Subglottic suctioning
+5. Early extubation
+
+Treatment:
+1. Broad-spectrum antibiotics
+2. Cover for resistant organisms
+3. De-escalate based on cultures
+4. 7-8 day course typically
+5. Monitor for complications
+
+================================================================================
+4. PNEUMOTHORAX SCENARIOS
+================================================================================
+
+SCENARIO 4A: SPONTANEOUS PNEUMOTHORAX
+Primary Spontaneous:
+- Young, tall, thin males
+- Smoking history
+- No underlying lung disease
+- Sudden onset chest pain
+
+Secondary Spontaneous:
+- Underlying lung disease (COPD, asthma)
+- Older patients
+- Higher recurrence rate
+- More severe symptoms
+
+Treatment Based on Size:
+Small (<20%):
+- Observation
+- High-flow oxygen
+- Serial chest X-rays
+- Discharge if stable
+
+Large (>20%) or symptomatic:
+- Needle decompression or
+- Chest tube insertion
+- Admit for observation
+- Consider pleurodesis
+
+SCENARIO 4B: TENSION PNEUMOTHORAX
+Clinical Signs:
+- Severe dyspnea
+- Chest pain
+- Tachycardia
+- Hypotension
+- JVD
+- Tracheal deviation (late sign)
+
+Emergency Treatment:
+1. Immediate needle decompression
+2. 14-gauge needle, 2nd intercostal space
+3. Midclavicular line
+4. Insert until air rushes out
+5. Follow with chest tube
+
+SCENARIO 4C: TRAUMATIC PNEUMOTHORAX
+Mechanisms:
+- Penetrating chest trauma
+- Blunt chest trauma
+- Rib fractures
+- Barotrauma
+
+Assessment:
+1. Primary survey (ABCDE)
+2. Chest examination
+3. Chest X-ray (if stable)
+4. CT scan if indicated
+5. Monitor for tension
+
+Treatment:
+1. Tube thoracostomy
+2. 36-40 Fr chest tube
+3. 5th intercostal space
+4. Anterior axillary line
+5. Connect to suction
+
+SCENARIO 4D: OPEN PNEUMOTHORAX (SUCKING CHEST WOUND)
+Mechanism:
+- Penetrating trauma
+- Chest wall defect >2/3 tracheal diameter
+- Air preferentially enters through wound
+
+Treatment:
+1. Three-sided occlusive dressing
+2. Tape on three sides only
+3. Allow air to escape on expiration
+4. Chest tube insertion
+5. Surgical repair
+
+================================================================================
+5. PULMONARY EDEMA
+================================================================================
+
+SCENARIO 5A: CARDIOGENIC PULMONARY EDEMA
+Causes:
+- Acute MI
+- Heart failure exacerbation
+- Valvular disease
+- Arrhythmias
+
+Presentation:
+- Acute dyspnea
+- Orthopnea
+- Pink frothy sputum
+- Bilateral crackles
+- S3 gallop
+
+Treatment:
+1. Upright positioning
+2. High-flow oxygen/CPAP
+3. Nitroglycerin (if BP >100 systolic)
+4. Furosemide 40-80mg IV
+5. Morphine for anxiety
+
+SCENARIO 5B: NON-CARDIOGENIC PULMONARY EDEMA (ARDS)
+Causes:
+- Sepsis
+- Aspiration
+- Trauma
+- Transfusion reaction
+- Drug overdose
+
+Berlin Criteria:
+- Acute onset (<1 week)
+- Bilateral infiltrates
+- Not explained by heart failure
+- PaO2/FiO2 ratio <300
+
+Treatment:
+1. Treat underlying cause
+2. Lung-protective ventilation
+3. Low tidal volumes (6 mL/kg IBW)
+4. PEEP optimization
+5. Fluid restriction
+
+SCENARIO 5C: NEGATIVE PRESSURE PULMONARY EDEMA
+Causes:
+- Upper airway obstruction
+- Post-extubation laryngospasm
+- Hanging/strangulation
+- Severe asthma
+
+Mechanism:
+- Extreme negative intrathoracic pressure
+- Increased venous return
+- Increased afterload
+- Capillary leak
+
+Treatment:
+1. Relieve airway obstruction
+2. Positive pressure ventilation
+3. PEEP application
+4. Diuretics usually not helpful
+5. Supportive care
+
+================================================================================
+6. RESPIRATORY FAILURE
+================================================================================
+
+SCENARIO 6A: TYPE 1 RESPIRATORY FAILURE (HYPOXEMIC)
+Definition: PaO2 <60 mmHg on room air
+
+Causes:
+- Pneumonia
+- ARDS
+- Pulmonary edema
+- Pneumothorax
+- Pulmonary embolism
+
+Treatment:
+1. Oxygen therapy
+2. Treat underlying cause
+3. Non-invasive ventilation
+4. Intubation if severe
+5. PEEP optimization
+
+SCENARIO 6B: TYPE 2 RESPIRATORY FAILURE (HYPERCAPNIC)
+Definition: PaCO2 >50 mmHg with pH <7.35
+
+Causes:
+- COPD exacerbation
+- Neuromuscular disease
+- Drug overdose
+- Chest wall deformity
+
+Treatment:
+1. Non-invasive ventilation (BiPAP)
+2. Treat underlying cause
+3. Bronchodilators if indicated
+4. Intubation if NIV fails
+5. Controlled ventilation
+
+SCENARIO 6C: ACUTE RESPIRATORY DISTRESS SYNDROME
+Phases:
+Exudative (0-7 days):
+- Inflammation
+- Capillary leak
+- Hyaline membrane formation
+
+Proliferative (7-21 days):
+- Fibroblast proliferation
+- Collagen deposition
+
+Fibrotic (>21 days):
+- Established fibrosis
+- Reduced compliance
+
+Management:
+1. Lung-protective ventilation
+2. Prone positioning
+3. Neuromuscular blockade
+4. Conservative fluid strategy
+5. ECMO if severe
+
+================================================================================
+7. PEDIATRIC RESPIRATORY EMERGENCIES
+================================================================================
+
+SCENARIO 7A: CROUP (LARYNGOTRACHEOBRONCHITIS)
+Age: 6 months to 6 years
+Cause: Parainfluenza virus
+
+Presentation:
+- Barking cough
+- Inspiratory stridor
+- Hoarse voice
+- Low-grade fever
+
+Severity Assessment:
+Mild: Occasional barking cough, no stridor at rest
+Moderate: Frequent barking cough, stridor at rest
+Severe: Frequent cough, prominent stridor, distress
+
+Treatment:
+1. Dexamethasone 0.15-0.6 mg/kg PO/IM
+2. Nebulized epinephrine if moderate-severe
+3. Cool mist (controversial)
+4. Avoid agitation
+5. Hospital admission if severe
+
+SCENARIO 7B: EPIGLOTTITIS
+Age: Any age (vaccine-preventable)
+Cause: H. influenzae type b, Streptococcus
+
+Presentation:
+- High fever
+- Severe sore throat
+- Drooling
+- Tripod positioning
+- "Hot potato" voice
+
+Management:
+1. Do NOT examine throat
+2. Keep child calm
+3. Prepare for emergency airway
+4. Antibiotics after airway secured
+5. Operating room for intubation
+
+SCENARIO 7C: BRONCHIOLITIS
+Age: <2 years, peak 2-6 months
+Cause: RSV most common
+
+Presentation:
+- URI symptoms
+- Wheezing
+- Increased work of breathing
+- Feeding difficulties
+
+Treatment:
+1. Supportive care
+2. Nasal suctioning
+3. Adequate hydration
+4. Oxygen if hypoxemic
+5. Bronchodilators not routinely recommended
+
+Indications for Admission:
+- Hypoxemia
+- Dehydration
+- Apnea
+- Age <3 months
+- Underlying conditions
+
+SCENARIO 7D: PERTUSSIS (WHOOPING COUGH)
+Stages:
+Catarrhal (1-2 weeks): URI symptoms
+Paroxysmal (2-6 weeks): Characteristic cough
+Convalescent (weeks to months): Gradual improvement
+
+Treatment:
+1. Antibiotics (azithromycin)
+2. Supportive care
+3. Isolation precautions
+4. Post-exposure prophylaxis
+5. Vaccination
+
+================================================================================
+8. SPECIAL RESPIRATORY SITUATIONS
+================================================================================
+
+SCENARIO 8A: NEAR-DROWNING
+Pathophysiology:
+- Hypoxemia
+- Aspiration
+- Hypothermia
+- Electrolyte abnormalities
+
+Treatment:
+1. Airway management
+2. Cervical spine protection
+3. Oxygenation and ventilation
+4. Rewarming
+5. Monitor for delayed deterioration
+
+Complications:
+- Secondary drowning
+- ARDS
+- Pneumonia
+- Cerebral edema
+
+SCENARIO 8B: SMOKE INHALATION
+Types of Injury:
+- Thermal injury (upper airway)
+- Chemical injury (lower airway)
+- Carbon monoxide poisoning
+- Cyanide toxicity
+
+Assessment:
+1. History of enclosed space fire
+2. Facial burns
+3. Singed nasal hairs
+4. Carbonaceous sputum
+5. Voice changes
+
+Treatment:
+1. 100% oxygen
+2. Early intubation if upper airway injury
+3. Bronchoscopy
+4. Hyperbaric oxygen for CO poisoning
+5. Supportive care
+
+SCENARIO 8C: HIGH ALTITUDE ILLNESS
+High Altitude Pulmonary Edema (HAPE):
+- Usually >2500m elevation
+- Rapid ascent
+- Exertional dyspnea
+- Cough
+- Pink frothy sputum
+
+Treatment:
+1. Immediate descent
+2. Oxygen therapy
+3. Nifedipine 30mg BID
+4. Portable hyperbaric chamber
+5. Avoid further ascent
+
+Prevention:
+- Gradual ascent
+- Acetazolamide prophylaxis
+- Adequate hydration
+- Recognition of symptoms
+
+SCENARIO 8D: ANAPHYLAXIS WITH RESPIRATORY INVOLVEMENT
+Respiratory Manifestations:
+- Laryngeal edema
+- Bronchospasm
+- Upper airway obstruction
+- Respiratory arrest
+
+Treatment:
+1. Epinephrine 0.3-0.5mg IM
+2. Remove trigger if possible
+3. High-flow oxygen
+4. Albuterol for bronchospasm
+5. Prepare for emergent airway
+
+Biphasic Reaction:
+- 1-72 hours after initial reaction
+- Up to 20% of cases
+- Observation period required
+- Discharge planning important
+
+Source: WHO Emergency Care Guidelines 2024, American Thoracic Society Guidelines
+Last Updated: October 2025

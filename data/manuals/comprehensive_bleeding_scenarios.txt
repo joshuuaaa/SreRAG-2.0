@@ -1,0 +1,626 @@
+WHO Emergency Care Guidelines: Comprehensive Bleeding Scenarios Database
+
+TABLE OF CONTENTS
+1. ARTERIAL BLEEDING SCENARIOS
+2. VENOUS BLEEDING SCENARIOS
+3. CAPILLARY BLEEDING SCENARIOS
+4. INTERNAL BLEEDING SCENARIOS
+5. LOCATION-SPECIFIC BLEEDING
+6. SPECIAL POPULATIONS
+7. TRAUMA-SPECIFIC SCENARIOS
+8. ADVANCED TECHNIQUES
+9. COMPLICATIONS AND MANAGEMENT
+10. ASSESSMENT PROTOCOLS
+
+================================================================================
+1. ARTERIAL BLEEDING SCENARIOS
+================================================================================
+
+SCENARIO 1A: SEVERED FEMORAL ARTERY
+Location: Upper thigh/groin area
+Characteristics:
+- Bright red blood spurting with each heartbeat
+- Rapid blood loss (can lose 40% blood volume in 3-4 minutes)
+- High-pressure bleeding
+
+Immediate Actions:
+1. Apply maximum direct pressure with both hands
+2. Use knee or elbow to maintain pressure if hands tire
+3. Apply tourniquet 2-3 inches above wound if direct pressure fails
+4. Elevate leg if no fracture suspected
+5. Call emergency services immediately
+
+Critical Timeline: Less than 5 minutes to control bleeding
+
+SCENARIO 1B: CAROTID ARTERY INJURY
+Location: Neck area
+Characteristics:
+- Massive blood loss potential
+- Risk of air embolism
+- Potential airway compromise
+
+Immediate Actions:
+1. Apply direct pressure with gauze/cloth
+2. Do NOT apply circumferential pressure around neck
+3. Position patient to prevent blood from entering airway
+4. Monitor breathing constantly
+5. Prepare for immediate surgical intervention
+
+WARNING: Neck tourniquets are contraindicated
+
+SCENARIO 1C: BRACHIAL ARTERY LACERATION
+Location: Upper arm
+Characteristics:
+- Moderate to severe bleeding
+- Pulse may be absent below injury
+- Possible nerve damage
+
+Immediate Actions:
+1. Direct pressure first
+2. Pressure point at armpit if needed
+3. Tourniquet application if conservative measures fail
+4. Check distal pulse and sensation
+5. Document time of tourniquet application
+
+SCENARIO 1D: RADIAL/ULNAR ARTERY INJURY
+Location: Forearm/wrist
+Characteristics:
+- Steady, pulsating bright red bleeding
+- Potential for compartment syndrome
+- Risk of hand ischemia
+
+Immediate Actions:
+1. Direct pressure over bleeding vessel
+2. Elevate arm above heart
+3. Pressure point at brachial artery if needed
+4. Monitor hand circulation
+5. Avoid overtightening bandages
+
+================================================================================
+2. VENOUS BLEEDING SCENARIOS
+================================================================================
+
+SCENARIO 2A: JUGULAR VEIN INJURY
+Location: Neck
+Characteristics:
+- Dark red blood flowing steadily
+- Risk of air embolism if large vein
+- May increase with patient movement
+
+Immediate Actions:
+1. Position patient upright if conscious and stable
+2. Apply direct pressure
+3. Seal wound to prevent air entry
+4. Monitor for air embolism signs (chest pain, difficulty breathing)
+5. Prepare for rapid transport
+
+SCENARIO 2B: FEMORAL VEIN LACERATION
+Location: Upper thigh
+Characteristics:
+- Steady, dark red bleeding
+- Large volume blood loss potential
+- May mimic arterial bleeding if pressure high
+
+Immediate Actions:
+1. Direct pressure with large dressing
+2. Elevation of leg
+3. Monitor for signs of shock
+4. Pressure point if direct pressure insufficient
+5. Avoid tourniquet unless life-threatening
+
+SCENARIO 2C: SCALP VEIN BLEEDING
+Location: Head/scalp
+Characteristics:
+- Profuse bleeding due to rich vascular supply
+- Often appears worse than actual blood loss
+- Difficult to control due to scalp mobility
+
+Immediate Actions:
+1. Direct pressure with large gauze pad
+2. Wrap circumferentially if no skull fracture suspected
+3. Ice application to reduce bleeding
+4. Monitor for signs of head injury
+5. Document neurological status
+
+================================================================================
+3. CAPILLARY BLEEDING SCENARIOS
+================================================================================
+
+SCENARIO 3A: EXTENSIVE ABRASIONS
+Location: Multiple areas (road rash, falls)
+Characteristics:
+- Slow, oozing bleeding from multiple points
+- Large surface area involved
+- Risk of contamination and infection
+
+Immediate Actions:
+1. Clean hands/use gloves
+2. Irrigate with clean water if heavily contaminated
+3. Apply broad pressure with clean cloth
+4. Cover with sterile dressing
+5. Monitor for signs of infection
+
+SCENARIO 3B: FINGERTIP AMPUTATIONS
+Location: Fingers
+Characteristics:
+- Moderate bleeding from rich capillary bed
+- Potential for reattachment
+- Significant pain
+
+Immediate Actions:
+1. Direct pressure to control bleeding
+2. Preserve amputated part in cool, moist environment
+3. Wrap amputated part in sterile gauze
+4. Place in sealed plastic bag, then in ice water
+5. Transport both patient and part immediately
+
+================================================================================
+4. INTERNAL BLEEDING SCENARIOS
+================================================================================
+
+SCENARIO 4A: ABDOMINAL TRAUMA WITH INTERNAL BLEEDING
+Signs and Symptoms:
+- Abdominal pain and tenderness
+- Rigid or distended abdomen
+- Bruising around navel or flanks
+- Vomiting blood or coffee-ground material
+- Signs of shock without external bleeding
+
+Assessment Protocol:
+1. Check vital signs every 5 minutes
+2. Look for Grey Turner's sign (flank bruising)
+3. Check for Cullen's sign (periumbilical bruising)
+4. Monitor for increasing abdominal girth
+5. Assess for rebound tenderness
+
+Immediate Actions:
+1. Position patient supine
+2. Do NOT give anything by mouth
+3. Monitor airway and breathing
+4. Prepare for shock treatment
+5. Rapid transport to trauma center
+
+SCENARIO 4B: CHEST TRAUMA WITH HEMOTHORAX
+Signs and Symptoms:
+- Chest pain
+- Difficulty breathing
+- Decreased breath sounds on one side
+- Dullness to percussion
+- Signs of shock
+
+Immediate Actions:
+1. Position patient upright if conscious
+2. Support injured side
+3. Monitor respiratory status
+4. Prepare for needle decompression if trained
+5. High-flow oxygen if available
+
+SCENARIO 4C: PELVIC FRACTURE WITH BLEEDING
+Signs and Symptoms:
+- Severe pelvic pain
+- Inability to bear weight
+- Leg length discrepancy
+- Blood at urethral opening
+- Signs of shock
+
+Immediate Actions:
+1. Stabilize pelvis with sheet wrap
+2. Do NOT log roll or move unnecessarily
+3. Monitor for bladder/urethral injury
+4. Treat for shock
+5. Rapid transport essential
+
+================================================================================
+5. LOCATION-SPECIFIC BLEEDING
+================================================================================
+
+SCENARIO 5A: NOSEBLEEDS (EPISTAXIS)
+Types:
+- Anterior (90%): Usually from Kiesselbach's plexus
+- Posterior (10%): Often more severe, difficult to control
+
+Anterior Nosebleed Protocol:
+1. Lean patient forward
+2. Pinch soft part of nose for 15 minutes
+3. Apply ice to bridge of nose
+4. Avoid nose blowing for 24 hours
+5. Use saline spray for moisture
+
+Posterior Nosebleed Protocol:
+1. Position upright, leaning forward
+2. Do NOT tilt head back
+3. Apply pressure as above
+4. If bleeding continues >20 minutes, seek medical care
+5. Monitor for airway compromise
+
+SCENARIO 5B: EAR BLEEDING (OTORRHAGIA)
+Causes:
+- Trauma to external ear
+- Tympanic membrane rupture
+- Basilar skull fracture
+- Foreign object injury
+
+Assessment:
+1. Determine if clear fluid mixed with blood (CSF leak)
+2. Check for Battle's sign (bruising behind ear)
+3. Assess hearing
+4. Look for foreign objects
+5. Document associated symptoms
+
+Treatment:
+1. Do NOT pack ear canal
+2. Cover external ear with sterile gauze
+3. Position patient with bleeding ear down
+4. Monitor for signs of head injury
+5. Seek immediate medical attention if CSF suspected
+
+SCENARIO 5C: MOUTH AND DENTAL BLEEDING
+Common Causes:
+- Tooth avulsion
+- Tongue lacerations
+- Lip injuries
+- Gingival trauma
+
+Tooth Avulsion Protocol:
+1. Find tooth and handle by crown only
+2. Rinse gently with milk or saline
+3. Attempt reimplantation if possible
+4. If not possible, store in milk or saliva
+5. Seek dental care within 1 hour
+
+Tongue/Lip Laceration:
+1. Direct pressure with gauze
+2. Ice application for swelling
+3. Rinse mouth gently with water
+4. Monitor airway if significant swelling
+5. Sutures may be needed if >1cm or gaping
+
+================================================================================
+6. SPECIAL POPULATIONS
+================================================================================
+
+SCENARIO 6A: PEDIATRIC BLEEDING
+Considerations:
+- Children have smaller blood volume (80ml/kg)
+- Compensate well initially, then decompensate rapidly
+- Calculation: 20% blood loss = 16ml/kg
+
+Special Protocols:
+1. Use age-appropriate pressure amounts
+2. Parent/caregiver involvement for comfort
+3. Monitor for hypothermia (larger surface area)
+4. Different shock signs: delayed capillary refill >2 seconds
+5. Glucose monitoring (limited glycogen stores)
+
+Weight-based calculations:
+- Mild shock: 10-15% blood loss
+- Moderate shock: 15-25% blood loss
+- Severe shock: >25% blood loss
+
+SCENARIO 6B: GERIATRIC BLEEDING
+Considerations:
+- Medications (anticoagulants, antiplatelets)
+- Fragile skin and blood vessels
+- Comorbidities affecting response
+- Polypharmacy interactions
+
+Special Protocols:
+1. Gentle pressure to avoid further injury
+2. Medication reconciliation
+3. Extended pressure time (poor clotting)
+4. Monitor for medication effects
+5. Consider underlying pathology
+
+Anticoagulant Considerations:
+- Warfarin: Prolonged bleeding, check INR
+- DOACs: Difficult to reverse
+- Aspirin: Affects platelet function
+- Heparin: Monitor PTT
+
+SCENARIO 6C: PREGNANCY-RELATED BLEEDING
+First Trimester:
+- Threatened abortion
+- Ectopic pregnancy
+- Molar pregnancy
+
+Assessment:
+1. Last menstrual period
+2. Pregnancy test if unknown
+3. Vital signs including orthostatic
+4. Abdominal examination
+5. Pelvic examination by qualified provider
+
+Second/Third Trimester:
+- Placenta previa
+- Placental abruption
+- Uterine rupture
+
+Emergency Actions:
+1. IV access (large bore)
+2. Position on left side
+3. Continuous fetal monitoring if >20 weeks
+4. Prepare for emergency delivery
+5. Blood type and crossmatch
+
+================================================================================
+7. TRAUMA-SPECIFIC SCENARIOS
+================================================================================
+
+SCENARIO 7A: PENETRATING TRAUMA
+Knife Wounds:
+- Do NOT remove knife
+- Stabilize object in place
+- Control bleeding around object
+- Monitor for organ damage
+- Document weapon characteristics
+
+Gunshot Wounds:
+- Assume internal damage
+- Look for exit wounds
+- Do NOT probe wound
+- Cover with sterile dressing
+- Rapid transport
+
+Impalement Injuries:
+- Stabilize object with bulky dressing
+- Cut object if necessary for transport
+- Monitor neurovascular status
+- Document object characteristics
+- Prepare for surgical removal
+
+SCENARIO 7B: CRUSH INJURIES
+Characteristics:
+- Massive tissue damage
+- Compartment syndrome risk
+- Rhabdomyolysis potential
+- Delayed bleeding after pressure release
+
+Management:
+1. Do NOT suddenly release crushing force
+2. Prepare for shock treatment
+3. Monitor for arrhythmias
+4. IV fluids to prevent kidney damage
+5. Document time under compression
+
+SCENARIO 7C: AVULSION INJURIES
+Complete Avulsion:
+- Preserve tissue in cool, moist environment
+- Control bleeding from wound bed
+- Do NOT use dry ice or place directly on ice
+- Wrap tissue in sterile gauze
+- Transport tissue with patient
+
+Partial Avulsion:
+- Preserve blood supply if possible
+- Support avulsed tissue
+- Control bleeding gently
+- Monitor tissue viability
+- Urgent surgical consultation
+
+================================================================================
+8. ADVANCED TECHNIQUES
+================================================================================
+
+SCENARIO 8A: PRESSURE POINTS
+Temporal Artery: For scalp bleeding
+- Location: In front of ear
+- Apply pressure with fingertips
+- Use for uncontrolled scalp bleeding
+
+Facial Artery: For face bleeding
+- Location: Corner of jaw
+- Apply pressure against mandible
+- Use for facial lacerations
+
+Subclavian Artery: For shoulder/upper arm
+- Location: Behind clavicle
+- Press down and backward
+- Use when brachial pressure insufficient
+
+Common Carotid: For head/neck bleeding
+- Location: Neck, beside trachea
+- Use ONLY if life-threatening bleeding
+- Monitor consciousness continuously
+
+Brachial Artery: For arm bleeding
+- Location: Inside upper arm
+- Press against humerus
+- Most effective arm pressure point
+
+Femoral Artery: For leg bleeding
+- Location: Groin crease
+- Press against pelvis
+- Use body weight if necessary
+
+SCENARIO 8B: HEMOSTATIC AGENTS
+QuikClot/Combat Gauze:
+- Pour directly into wound
+- Apply pressure over agent
+- Remove with irrigation later
+- For severe external bleeding
+
+Celox Granules:
+- Works independent of clotting cascade
+- Effective with anticoagulated patients
+- Biodegradable
+- Forms gel plug
+
+WoundSeal Powder:
+- Creates instant scab
+- For minor to moderate bleeding
+- Antimicrobial properties
+- Easy to apply
+
+SCENARIO 8C: IMPROVISED TOURNIQUETS
+Belt Tourniquet:
+- Use wide belt
+- Apply 2-3 inches above wound
+- Tighten with stick as windlass
+- Secure windlass
+
+Clothing Tourniquet:
+- Use shirt, pants leg
+- Create 2-inch wide band
+- Apply windlass technique
+- Mark application time
+
+Commercial Tourniquets:
+- CAT (Combat Application Tourniquet)
+- SOFTT (Special Operations Forces Tactical Tourniquet)
+- Proper training required
+- Single-use devices
+
+================================================================================
+9. COMPLICATIONS AND MANAGEMENT
+================================================================================
+
+SCENARIO 9A: REBLEEDING
+Causes:
+- Insufficient initial pressure
+- Clot dislodgement
+- Coagulopathy
+- Medication effects
+
+Management:
+1. Reapply direct pressure
+2. Add additional dressing material
+3. Reassess pressure point use
+4. Consider hemostatic agents
+5. Prepare for surgical intervention
+
+SCENARIO 9B: COMPARTMENT SYNDROME
+Signs:
+- Pain out of proportion to injury
+- Pain with passive stretch
+- Paresthesias
+- Paralysis (late sign)
+- Pulselessness (very late sign)
+
+Management:
+1. Remove all constricting items
+2. Elevate to heart level only
+3. Monitor neurovascular status
+4. Document time of onset
+5. Prepare for fasciotomy
+
+SCENARIO 9C: COAGULOPATHY
+Trauma-Induced Coagulopathy:
+- Acidosis
+- Hypothermia
+- Hemodilution
+- Hypocalcemia
+
+Management:
+1. Correct hypothermia
+2. Address acidosis
+3. Replace clotting factors
+4. Monitor laboratory values
+5. Transfusion protocol activation
+
+================================================================================
+10. ASSESSMENT PROTOCOLS
+================================================================================
+
+PRIMARY ASSESSMENT PROTOCOL
+A - Airway: Clear and patent?
+B - Breathing: Rate, depth, quality
+C - Circulation: Pulse, blood pressure, bleeding
+D - Disability: Neurological status
+E - Exposure: Remove clothing to assess, prevent hypothermia
+
+SECONDARY ASSESSMENT PROTOCOL
+Vital Signs:
+- Blood pressure (systolic <90 = shock)
+- Heart rate (>100 = potential shock)
+- Respiratory rate (>20 = distress)
+- Temperature (hypothermia concern)
+- Oxygen saturation
+
+Bleeding Assessment:
+- Rate of bleeding (mL/minute estimate)
+- Type of bleeding (arterial/venous/capillary)
+- Location and accessibility
+- Associated injuries
+- Response to initial treatment
+
+SHOCK STAGING
+Stage 1 (Compensated):
+- Blood loss: <15% (750mL)
+- Heart rate: <100
+- Blood pressure: Normal
+- Mental status: Alert
+
+Stage 2 (Mild):
+- Blood loss: 15-30% (750-1500mL)
+- Heart rate: 100-120
+- Blood pressure: Slightly decreased
+- Mental status: Anxious
+
+Stage 3 (Moderate):
+- Blood loss: 30-40% (1500-2000mL)
+- Heart rate: 120-140
+- Blood pressure: Decreased
+- Mental status: Confused
+
+Stage 4 (Severe):
+- Blood loss: >40% (>2000mL)
+- Heart rate: >140
+- Blood pressure: Severely decreased
+- Mental status: Lethargic/unconscious
+
+DOCUMENTATION REQUIREMENTS
+Initial Assessment:
+- Time of injury
+- Mechanism of injury
+- Initial bleeding rate
+- Vital signs
+- Treatment provided
+
+Ongoing Assessment:
+- Response to treatment
+- Vital sign trends
+- Additional interventions
+- Time markers
+- Complications
+
+Transport Information:
+- Estimated blood loss
+- Interventions performed
+- Current status
+- Special considerations
+- Hospital notification
+
+================================================================================
+QUICK REFERENCE DECISION TREE
+
+BLEEDING IDENTIFIED
+↓
+Life-threatening? (>Class 2 shock, spurting blood, large vessels)
+├─ YES → Direct pressure + Elevation + Call EMS immediately
+│         ↓
+│         Controlled in 2 minutes?
+│         ├─ NO → Pressure point + Consider tourniquet
+│         └─ YES → Monitor and transport
+│
+└─ NO → Direct pressure + Elevation
+         ↓
+         Controlled in 10 minutes?
+         ├─ NO → Reassess for missed injury + EMS
+         └─ YES → Clean and dress wound
+
+TOURNIQUET DECISION POINTS
+1. Life-threatening bleeding from extremity
+2. Direct pressure fails
+3. Multiple casualties (triage situation)
+4. Unsafe environment preventing prolonged pressure
+5. Anatomically difficult to access bleeding
+
+CONTRAINDICATIONS FOR TOURNIQUETS
+- Neck injuries
+- Suspected fractures through tourniquet site
+- Previous vascular surgery in limb
+- Severe peripheral vascular disease
+- Application over prosthetic devices
+
+Source: WHO Emergency Care Guidelines 2024, ACS Committee on Trauma, TCCC Guidelines
+Last Updated: October 2025

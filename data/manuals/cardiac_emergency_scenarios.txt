@@ -1,0 +1,485 @@
+WHO Emergency Care Guidelines: Cardiac Emergency Scenarios Database
+
+TABLE OF CONTENTS
+1. CARDIAC ARREST SCENARIOS
+2. ACUTE MYOCARDIAL INFARCTION
+3. ARRHYTHMIA SCENARIOS
+4. CARDIOGENIC SHOCK
+5. SPECIAL CARDIAC SITUATIONS
+6. PEDIATRIC CARDIAC EMERGENCIES
+7. ADVANCED CARDIAC LIFE SUPPORT
+8. POST-RESUSCITATION CARE
+
+================================================================================
+1. CARDIAC ARREST SCENARIOS
+================================================================================
+
+SCENARIO 1A: WITNESSED ADULT CARDIAC ARREST
+Location: Public place (mall, office, home)
+Presentation:
+- Sudden collapse
+- Unresponsive to verbal/physical stimuli
+- No normal breathing (agonal breathing doesn't count)
+- No pulse palpable
+
+Immediate Actions (Chain of Survival):
+1. Recognition and activation of EMS (call 911/emergency services)
+2. Early CPR with chest compressions
+3. Rapid defibrillation with AED
+4. Advanced life support
+5. Post-cardiac arrest care
+
+CPR Protocol (Adult):
+- Hand position: Lower half of breastbone
+- Compression depth: 2-2.4 inches (5-6 cm)
+- Compression rate: 100-120 per minute
+- Allow complete chest recoil
+- Minimize interruptions
+- 30:2 compression to ventilation ratio
+
+SCENARIO 1B: UNWITNESSED CARDIAC ARREST
+Considerations:
+- Unknown down time
+- Possible hypothermia
+- Potential trauma as cause
+- Medication overdose possibility
+
+Modified Approach:
+1. Assess for signs of life
+2. Check for obvious injuries
+3. Consider cervical spine protection
+4. Begin CPR if no pulse
+5. Continue until EMS arrival or ROSC
+
+SCENARIO 1C: DROWNING CARDIAC ARREST
+Special Considerations:
+- Hypothermia common
+- Aspiration likely
+- Electrolyte imbalances
+- Prolonged submersion effects
+
+Protocol Modifications:
+1. Remove from water safely
+2. Begin rescue breathing immediately
+3. Start chest compressions on firm surface
+4. Warm the patient during resuscitation
+5. Continue longer than usual (hypothermic protection)
+
+SCENARIO 1D: DRUG OVERDOSE CARDIAC ARREST
+Common Causes:
+- Opioid overdose
+- Stimulant toxicity
+- Tricyclic antidepressant poisoning
+- Multiple drug interactions
+
+Special Interventions:
+1. Administer naloxone if opioid suspected
+2. Consider sodium bicarbonate for TCA overdose
+3. Avoid certain medications (procainamide with cocaine)
+4. Extended resuscitation efforts
+5. Toxicology consultation
+
+================================================================================
+2. ACUTE MYOCARDIAL INFARCTION (HEART ATTACK)
+================================================================================
+
+SCENARIO 2A: CLASSIC STEMI PRESENTATION
+Signs and Symptoms:
+- Severe crushing chest pain
+- Pain radiating to left arm, jaw, back
+- Diaphoresis (sweating)
+- Nausea and vomiting
+- Shortness of breath
+
+Assessment:
+1. OPQRST pain assessment
+2. Vital signs including oxygen saturation
+3. 12-lead ECG within 10 minutes
+4. Cardiac biomarkers
+5. Chest X-ray
+
+Immediate Treatment:
+1. Oxygen if SpO2 <90%
+2. Aspirin 325mg chewed (if not allergic)
+3. Nitroglycerin sublingual (if BP >90 systolic)
+4. Morphine for severe pain
+5. Beta-blocker if stable
+
+SCENARIO 2B: SILENT MI (DIABETIC/ELDERLY)
+Atypical Presentations:
+- Vague chest discomfort
+- Shortness of breath only
+- Fatigue
+- Nausea
+- Confusion (elderly)
+
+High-Risk Populations:
+- Diabetes mellitus
+- Elderly (>75 years)
+- Women
+- Chronic kidney disease
+- Previous MI
+
+Assessment Strategy:
+1. High index of suspicion
+2. Serial ECGs
+3. Troponin levels
+4. Echocardiogram
+5. Risk stratification tools
+
+SCENARIO 2C: NSTEMI PRESENTATION
+Characteristics:
+- Chest discomfort at rest
+- No ST elevation on ECG
+- Positive cardiac biomarkers
+- Often crescendo pattern
+
+Management:
+1. Dual antiplatelet therapy
+2. Anticoagulation
+3. Risk stratification
+4. Early invasive strategy if high risk
+5. Medical optimization
+
+SCENARIO 2D: UNSTABLE ANGINA
+Features:
+- New onset severe angina
+- Crescendo pattern
+- Rest angina
+- Post-MI angina
+- Normal biomarkers initially
+
+Treatment Approach:
+1. Aggressive medical therapy
+2. Risk stratification
+3. Early catheterization if high risk
+4. Medical optimization
+5. Lifestyle counseling
+
+================================================================================
+3. ARRHYTHMIA SCENARIOS
+================================================================================
+
+SCENARIO 3A: VENTRICULAR FIBRILLATION
+Presentation:
+- Cardiac arrest
+- Irregular, chaotic rhythm
+- No effective cardiac output
+- Requires immediate defibrillation
+
+Treatment:
+1. Immediate defibrillation (200J biphasic)
+2. Resume CPR immediately for 2 minutes
+3. Check rhythm and repeat shock if indicated
+4. Epinephrine 1mg IV every 3-5 minutes
+5. Consider amiodarone 300mg IV
+
+SCENARIO 3B: VENTRICULAR TACHYCARDIA
+Stable VT:
+- Pulse present
+- Blood pressure maintained
+- Conscious
+
+Treatment:
+1. IV access and oxygen
+2. Amiodarone 150mg IV over 10 minutes
+3. Procainamide alternative
+4. Prepare for cardioversion
+5. Treat underlying causes
+
+Unstable VT:
+- Hypotension
+- Altered mental status
+- Chest pain
+- Heart failure
+
+Treatment:
+1. Immediate synchronized cardioversion
+2. Sedate if conscious
+3. 100J initial energy
+4. Increase energy if unsuccessful
+5. Post-conversion monitoring
+
+SCENARIO 3C: SUPRAVENTRICULAR TACHYCARDIA
+Presentation:
+- Heart rate >150 bpm
+- Narrow QRS complex
+- Regular rhythm
+- Sudden onset/termination
+
+Vagal Maneuvers:
+1. Valsalva maneuver (bear down)
+2. Carotid massage (if no bruits)
+3. Ice water face immersion
+4. Leg elevation with head down
+
+Pharmacological:
+1. Adenosine 6mg IV rapid push
+2. If no response, 12mg IV
+3. Follow with rapid saline flush
+4. Monitor for conversion
+
+SCENARIO 3D: ATRIAL FIBRILLATION WITH RVR
+Acute Onset (<48 hours):
+- Cardioversion consideration
+- Anticoagulation if risk factors
+- Rate vs rhythm control
+
+Chronic AFib:
+- Rate control priority
+- Long-term anticoagulation
+- Rhythm control in selected patients
+
+Rate Control Agents:
+1. Metoprolol 25-50mg PO BID
+2. Diltiazem 120-360mg daily
+3. Digoxin 0.125-0.25mg daily
+4. Avoid in WPW syndrome
+
+================================================================================
+4. CARDIOGENIC SHOCK
+================================================================================
+
+SCENARIO 4A: ACUTE MI WITH CARDIOGENIC SHOCK
+Hemodynamic Profile:
+- Cardiac index <2.2 L/min/m²
+- PCWP >15 mmHg
+- Systolic BP <90 mmHg
+- Signs of organ hypoperfusion
+
+Immediate Management:
+1. Intraaortic balloon pump
+2. Vasopressor support (norepinephrine)
+3. Inotropic support (dobutamine)
+4. Emergency revascularization
+5. Mechanical circulatory support consideration
+
+SCENARIO 4B: ACUTE HEART FAILURE WITH SHOCK
+Precipitating Factors:
+- Medication noncompliance
+- Dietary indiscretion
+- Arrhythmias
+- Infection
+- Myocardial ischemia
+
+Treatment Strategy:
+1. IV diuretics (furosemide)
+2. Vasodilators if normotensive
+3. Inotropes if low cardiac output
+4. BiPAP for respiratory support
+5. Treat precipitating factors
+
+SCENARIO 4C: RIGHT HEART FAILURE SHOCK
+Causes:
+- Massive pulmonary embolism
+- Right ventricular infarction
+- Pulmonary hypertension crisis
+- Tricuspid valve disease
+
+Management:
+1. Volume optimization
+2. Pulmonary vasodilators
+3. Inotropic support
+4. Avoid excessive preload reduction
+5. Treat underlying cause
+
+================================================================================
+5. SPECIAL CARDIAC SITUATIONS
+================================================================================
+
+SCENARIO 5A: CARDIAC TAMPONADE
+Beck's Triad:
+- Elevated JVP
+- Hypotension
+- Muffled heart sounds
+
+Additional Signs:
+- Pulsus paradoxus >20 mmHg
+- Tachycardia
+- Distant heart sounds
+
+Emergency Treatment:
+1. Immediate pericardiocentesis
+2. Volume expansion
+3. Inotropic support
+4. Avoid diuretics
+5. Surgical drainage
+
+SCENARIO 5B: ACUTE AORTIC DISSECTION
+Type A (Ascending):
+- Chest pain radiating to back
+- Pulse deficits
+- Aortic regurgitation
+- Neurological symptoms
+
+Type B (Descending):
+- Back pain
+- Hypertension
+- Renal insufficiency
+- Limb ischemia
+
+Management:
+1. Blood pressure control (beta-blockers first)
+2. Pain control
+3. Emergency surgery for Type A
+4. Medical management for uncomplicated Type B
+5. Serial imaging
+
+SCENARIO 5C: PULMONARY EMBOLISM
+Massive PE:
+- Hemodynamic instability
+- RV strain on echo
+- Elevated troponins
+- Hypoxemia
+
+Treatment:
+1. Anticoagulation (heparin)
+2. Thrombolytic therapy if massive
+3. Embolectomy consideration
+4. IVC filter if anticoagulation contraindicated
+5. Supportive care
+
+SCENARIO 5D: HYPERTENSIVE EMERGENCY
+Malignant Hypertension:
+- BP >180/120 with end-organ damage
+- Papilledema
+- Acute kidney injury
+- Microangiopathic hemolytic anemia
+
+Treatment:
+1. Reduce BP by 10-20% in first hour
+2. Nicardipine or clevidipine IV
+3. Avoid sublingual nifedipine
+4. Monitor for organ function
+5. Gradual BP reduction over 24-48 hours
+
+================================================================================
+6. PEDIATRIC CARDIAC EMERGENCIES
+================================================================================
+
+SCENARIO 6A: PEDIATRIC CARDIAC ARREST
+Differences from Adult:
+- Respiratory causes more common
+- Smaller blood volume
+- Different drug dosing
+- Size-appropriate equipment
+
+BLS Modifications:
+- Infant: 2 thumb technique
+- Child: Heel of one hand
+- Compression depth: 1/3 chest depth
+- Rate: 100-120/minute
+- Ratio: 30:2 (one rescuer), 15:2 (two rescuer)
+
+SCENARIO 6B: CONGENITAL HEART DISEASE EMERGENCY
+Cyanotic Episodes:
+- Tetralogy of Fallot
+- Tricuspid atresia
+- Pulmonary atresia
+
+Management:
+1. Knee-chest position
+2. Oxygen administration
+3. Morphine for agitation
+4. Volume expansion
+5. Beta-blocker for spells
+
+SCENARIO 6C: KAWASAKI DISEASE CARDIAC COMPLICATIONS
+Coronary Artery Aneurysms:
+- Fever >5 days
+- Conjunctivitis
+- Rash
+- Lymphadenopathy
+- Oral changes
+
+Cardiac Management:
+1. Echocardiography
+2. Aspirin therapy
+3. IVIG if acute phase
+4. Anticoagulation if large aneurysms
+5. Long-term cardiology follow-up
+
+================================================================================
+7. ADVANCED CARDIAC LIFE SUPPORT
+================================================================================
+
+ACLS ALGORITHMS
+
+VF/Pulseless VT:
+1. CPR + shock
+2. Epinephrine 1mg q3-5min
+3. Amiodarone 300mg, then 150mg
+4. Consider reversible causes
+
+Asystole/PEA:
+1. High-quality CPR
+2. Epinephrine 1mg q3-5min
+3. Consider atropine 1mg (asystole)
+4. Treat reversible causes
+
+Bradycardia:
+1. Atropine 0.5mg IV
+2. Transcutaneous pacing
+3. Dopamine 2-10 mcg/kg/min
+4. Epinephrine 2-10 mcg/min
+
+Tachycardia:
+1. Vagal maneuvers
+2. Adenosine 6mg, then 12mg
+3. Cardioversion if unstable
+4. Rate control if stable
+
+H's and T's (Reversible Causes):
+- Hypovolemia
+- Hypoxia
+- Hydrogen ion (acidosis)
+- Hypo/hyperkalemia
+- Hypothermia
+- Toxins
+- Tamponade
+- Tension pneumothorax
+- Thrombosis (pulmonary)
+- Thrombosis (coronary)
+
+================================================================================
+8. POST-RESUSCITATION CARE
+================================================================================
+
+ROSC MANAGEMENT
+Initial Stabilization:
+1. Airway management
+2. Oxygenation (SpO2 94-98%)
+3. Ventilation (ETCO2 35-40 mmHg)
+4. Blood pressure support
+5. Temperature management
+
+Targeted Temperature Management:
+- Target 32-36°C
+- Initiate within 6 hours
+- Maintain for 24 hours
+- Gradual rewarming
+- Monitor for complications
+
+Neurological Assessment:
+1. Glasgow Coma Scale
+2. Pupillary response
+3. Brainstem reflexes
+4. Motor responses
+5. EEG monitoring
+
+Prognostication:
+- Avoid early withdrawal
+- Multimodal assessment
+- Wait 72 hours minimum
+- Consider confounders
+- Family communication
+
+Long-term Care:
+1. Cardiac catheterization
+2. Device therapy evaluation
+3. Heart failure management
+4. Rehabilitation planning
+5. Family support
+
+Source: American Heart Association Guidelines 2020, European Resuscitation Council Guidelines 2021
+Last Updated: October 2025

@@ -1,0 +1,1047 @@
+WHO Emergency Care Guidelines: Neurological Emergency Scenarios Database
+
+TABLE OF CONTENTS
+1. STROKE AND CEREBROVASCULAR EMERGENCIES
+2. SEIZURE DISORDERS
+3. ALTERED MENTAL STATUS
+4. TRAUMATIC BRAIN INJURY
+5. SPINAL CORD EMERGENCIES
+6. HEADACHE EMERGENCIES
+7. MOVEMENT DISORDERS
+8. NEUROMUSCULAR EMERGENCIES
+
+================================================================================
+1. STROKE AND CEREBROVASCULAR EMERGENCIES
+================================================================================
+
+SCENARIO 1A: ACUTE ISCHEMIC STROKE
+Recognition (FAST/BE-FAST):
+Face: Facial droop, asymmetric smile
+Arms: Arm weakness, drift
+Speech: Slurred speech, difficulty understanding
+Time: Note time of symptom onset
+Balance: Loss of balance, coordination
+Eyes: Visual changes
+Time: Critical for treatment decisions
+
+Stroke Mimics to Consider:
+- Hypoglycemia
+- Seizure with postictal state
+- Migraine with aura
+- Conversion disorder
+- Drug intoxication
+
+NIH Stroke Scale Assessment:
+1a. Level of consciousness (0-3)
+1b. LOC questions (0-2)
+1c. LOC commands (0-2)
+2. Best gaze (0-2)
+3. Visual fields (0-3)
+4. Facial palsy (0-3)
+5a. Motor arm left (0-4)
+5b. Motor arm right (0-4)
+6a. Motor leg left (0-4)
+6b. Motor leg right (0-4)
+7. Limb ataxia (0-2)
+8. Sensory (0-2)
+9. Best language (0-3)
+10. Dysarthria (0-2)
+11. Extinction/inattention (0-2)
+
+Score: 0 = No stroke, 1-4 = Minor, 5-15 = Moderate, 16-20 = Mod-severe, 21-42 = Severe
+
+Treatment Timeline:
+0-3 hours: IV tPA eligible
+0-6 hours: Mechanical thrombectomy (large vessel)
+0-24 hours: Extended window with advanced imaging
+
+Contraindications to tPA:
+Absolute:
+- Onset >4.5 hours (or unknown)
+- Prior ICH
+- Active bleeding
+- Recent surgery (<14 days)
+- BP >185/110 after treatment
+
+Relative:
+- Minor symptoms
+- Pregnancy
+- Age >80 with diabetes + prior stroke
+- Anticoagulation with INR >1.7
+
+SCENARIO 1B: HEMORRHAGIC STROKE
+Intracerebral Hemorrhage (ICH):
+Common Locations:
+- Putamen (most common)
+- Thalamus
+- Cerebellum
+- Brainstem
+- Lobar
+
+Risk Factors:
+- Hypertension
+- Anticoagulation
+- Amyloid angiopathy
+- AVM/aneurysm
+- Cocaine use
+
+Treatment:
+1. BP control (target <140 systolic if >220 initially)
+2. Reverse anticoagulation
+3. ICP management
+4. Seizure prophylaxis (controversial)
+5. Surgical evaluation
+
+Subarachnoid Hemorrhage (SAH):
+Classic Triad:
+- Sudden severe headache ("thunderclap")
+- Neck stiffness
+- Altered consciousness
+
+Hunt-Hess Grading:
+Grade 1: Asymptomatic or mild headache
+Grade 2: Moderate-severe headache, neck stiffness
+Grade 3: Drowsiness, confusion, mild focal deficit
+Grade 4: Stupor, moderate-severe hemiparesis
+Grade 5: Deep coma, decerebrate posturing
+
+Treatment:
+1. Aneurysm securing (coiling vs. clipping)
+2. Nimodipine for vasospasm prevention
+3. Blood pressure management
+4. Hydrocephalus monitoring
+5. DVT prophylaxis
+
+SCENARIO 1C: TRANSIENT ISCHEMIC ATTACK (TIA)
+Definition: Transient neurological dysfunction without permanent injury
+
+ABCD² Score:
+Age ≥60: 1 point
+Blood pressure ≥140/90: 1 point
+Clinical features:
+- Unilateral weakness: 2 points
+- Speech disturbance: 1 point
+Duration:
+- ≥60 minutes: 2 points
+- 10-59 minutes: 1 point
+Diabetes: 1 point
+
+Risk Stratification:
+Score 0-3: Low risk (1% stroke risk at 2 days)
+Score 4-5: Moderate risk (4% stroke risk)
+Score 6-7: High risk (8% stroke risk)
+
+Treatment:
+1. Aspirin 325mg
+2. Statin therapy
+3. Blood pressure control
+4. Carotid imaging
+5. Cardiac evaluation
+
+================================================================================
+2. SEIZURE DISORDERS
+================================================================================
+
+SCENARIO 2A: GENERALIZED TONIC-CLONIC SEIZURE
+Phases:
+Tonic Phase (10-20 seconds):
+- Sudden loss of consciousness
+- Muscle rigidity
+- Falling
+- Cry or groan
+
+Clonic Phase (30 seconds - 2 minutes):
+- Rhythmic jerking
+- May have tongue biting
+- Incontinence
+- Frothing at mouth
+
+Postictal Phase (5-30 minutes):
+- Confusion
+- Drowsiness
+- Headache
+- Muscle soreness
+
+Management During Seizure:
+1. Protect airway
+2. Turn to side position
+3. Protect from injury
+4. Do NOT restrain
+5. Time the seizure
+
+Do NOT:
+- Put anything in mouth
+- Hold down patient
+- Give oral medications
+- Move unless in danger
+
+Post-Seizure Care:
+1. Check vital signs
+2. Neurological assessment
+3. Blood glucose
+4. Consider IV access
+5. Monitor for repeat seizures
+
+SCENARIO 2B: STATUS EPILEPTICUS
+Definition: Seizure >5 minutes or recurrent seizures without recovery
+
+Types:
+Convulsive Status Epilepticus:
+- Generalized tonic-clonic
+- Focal with secondary generalization
+- Myoclonic status
+
+Non-convulsive Status Epilepticus:
+- Absence status
+- Complex partial status
+- Subtle status (post-anoxic)
+
+Treatment Protocol:
+0-5 minutes:
+- ABCs, IV access, glucose check
+- Lorazepam 0.1 mg/kg IV (max 4mg) or
+- Diazepam 0.15 mg/kg IV (max 10mg)
+
+5-20 minutes:
+- Fosphenytoin 20 PE/kg IV or
+- Levetiracetam 60 mg/kg IV or
+- Valproic acid 40 mg/kg IV
+
+20-40 minutes:
+- Additional antiepileptic drug
+- Consider anesthesia
+
+>40 minutes:
+- Refractory status epilepticus
+- General anesthesia
+- EEG monitoring
+
+SCENARIO 2C: FEBRILE SEIZURES
+Age: 6 months to 5 years
+Temperature: >38°C (100.4°F)
+
+Simple Febrile Seizures:
+- Generalized
+- <15 minutes duration
+- No focal features
+- No recurrence in 24 hours
+
+Complex Febrile Seizures:
+- Focal features
+- >15 minutes duration
+- Recurrent in 24 hours
+
+Management:
+1. Control fever (acetaminophen/ibuprofen)
+2. Search for infection source
+3. Lumbar puncture if indicated
+4. No routine antiepileptics
+5. Parent education
+
+Indications for LP:
+- Age <12 months
+- Ill appearance
+- Meningeal signs
+- Complex features
+
+SCENARIO 2D: BREAKTHROUGH SEIZURES IN KNOWN EPILEPTIC
+Common Triggers:
+- Medication noncompliance
+- Sleep deprivation
+- Alcohol withdrawal
+- Illness/fever
+- Drug interactions
+
+Assessment:
+1. Medication levels
+2. Recent medication changes
+3. Compliance history
+4. Precipitating factors
+5. Seizure pattern changes
+
+Treatment:
+1. Usual seizure protocol
+2. Check anticonvulsant levels
+3. Medication adjustment
+4. Identify triggers
+5. Neurology consultation
+
+================================================================================
+3. ALTERED MENTAL STATUS
+================================================================================
+
+SCENARIO 3A: ACUTE CONFUSIONAL STATE (DELIRIUM)
+Subtypes:
+Hyperactive:
+- Agitation
+- Restlessness
+- Emotional lability
+- Hallucinations
+
+Hypoactive:
+- Lethargy
+- Reduced activity
+- Withdrawn behavior
+- Missed diagnosis common
+
+Mixed: Alternating between hyper- and hypoactive
+
+Risk Factors:
+- Advanced age
+- Dementia
+- Severe illness
+- Medications
+- Sensory impairment
+
+Assessment Tools:
+Confusion Assessment Method (CAM):
+1. Acute onset and fluctuating course
+2. Inattention
+3. Disorganized thinking
+4. Altered level of consciousness
+
+Diagnosis requires 1 + 2 + (3 or 4)
+
+Treatment:
+1. Identify and treat underlying cause
+2. Environmental modifications
+3. Avoid restraints
+4. Haloperidol 0.5-2mg if severe agitation
+5. Family involvement
+
+SCENARIO 3B: COMA EVALUATION
+Glasgow Coma Scale:
+Eye Opening:
+4 = Spontaneous
+3 = To voice
+2 = To pain
+1 = None
+
+Verbal Response:
+5 = Oriented
+4 = Confused
+3 = Inappropriate words
+2 = Incomprehensible sounds
+1 = None
+
+Motor Response:
+6 = Obeys commands
+5 = Localizes pain
+4 = Withdraws from pain
+3 = Flexor response
+2 = Extensor response
+1 = None
+
+Brainstem Reflexes:
+- Pupillary light reflex
+- Corneal reflex
+- Oculocephalic (doll's eyes)
+- Oculovestibular (cold calorics)
+- Gag reflex
+
+Coma Workup:
+1. Glucose, electrolytes, toxicology
+2. Arterial blood gas
+3. Liver function tests
+4. CT head
+5. Lumbar puncture if indicated
+
+SCENARIO 3C: HYPOGLYCEMIC COMA
+Risk Factors:
+- Diabetes mellitus
+- Alcohol use
+- Liver disease
+- Sepsis
+- Adrenal insufficiency
+
+Clinical Features:
+- Sweating
+- Tremor
+- Confusion
+- Seizures
+- Coma
+
+Treatment:
+Conscious Patient:
+- Oral glucose (juice, candy)
+- Monitor response
+- Check blood glucose
+
+Unconscious Patient:
+- Dextrose 50% 25-50mL IV or
+- Glucagon 1mg IM if no IV access
+- Recheck glucose in 15 minutes
+- Investigate cause
+
+Prevention:
+- Patient education
+- Medication adjustment
+- Regular monitoring
+- Emergency supplies
+
+SCENARIO 3D: DRUG INTOXICATION/WITHDRAWAL
+Common Toxidromes:
+
+Anticholinergic:
+- "Mad as a hatter" (delirium)
+- "Hot as a hare" (hyperthermia)
+- "Dry as a bone" (dry mucosa)
+- "Red as a beet" (flushing)
+- "Blind as a bat" (mydriasis)
+
+Cholinergic:
+- SLUDGE: Salivation, Lacrimation, Urination, Defecation, GI cramps, Emesis
+- Miosis
+- Fasciculations
+
+Sympathomimetic:
+- Hyperthermia
+- Tachycardia
+- Hypertension
+- Mydriasis
+- Agitation
+
+Opioid:
+- CNS depression
+- Respiratory depression
+- Miosis
+- Reduced bowel sounds
+
+Treatment:
+1. Supportive care
+2. Specific antidotes if available
+3. Decontamination if appropriate
+4. Monitor for complications
+5. Psychiatric evaluation
+
+================================================================================
+4. TRAUMATIC BRAIN INJURY
+================================================================================
+
+SCENARIO 4A: MILD TBI (CONCUSSION)
+Definition: GCS 13-15 with brief LOC or amnesia
+
+Post-Concussion Symptoms:
+Physical:
+- Headache
+- Nausea
+- Dizziness
+- Fatigue
+- Sensitivity to light/noise
+
+Cognitive:
+- Memory problems
+- Difficulty concentrating
+- Feeling mentally "foggy"
+- Confusion
+
+Emotional:
+- Irritability
+- Sadness
+- Anxiety
+- Sleep disturbances
+
+Management:
+1. Neurological assessment
+2. CT head if indicated
+3. Discharge instructions
+4. Return to activity guidelines
+5. Follow-up arrangements
+
+Canadian CT Head Rule:
+High Risk (for neurosurgical intervention):
+- GCS <15 at 2 hours
+- Suspected open skull fracture
+- Signs of basilar skull fracture
+- Vomiting ≥2 episodes
+- Age ≥65
+
+Medium Risk (for brain injury):
+- Amnesia >30 minutes
+- Dangerous mechanism
+
+SCENARIO 4B: MODERATE TBI
+Definition: GCS 9-12
+
+Assessment:
+1. Primary survey (ATLS)
+2. Neurological examination
+3. CT head
+4. Cervical spine imaging
+5. Secondary survey
+
+Treatment:
+1. ICP monitoring
+2. Blood pressure management
+3. Oxygenation maintenance
+4. Temperature control
+5. Seizure prophylaxis
+
+ICP Management:
+First Tier:
+- Head elevation 30°
+- Sedation
+- Neuromuscular blockade
+- Osmotic therapy (mannitol/hypertonic saline)
+
+Second Tier:
+- Barbiturate coma
+- Hypothermia
+- Decompressive craniectomy
+
+SCENARIO 4C: SEVERE TBI
+Definition: GCS ≤8
+
+Initial Management:
+1. Rapid sequence intubation
+2. Ventilation to PCO2 35-40 mmHg
+3. Blood pressure support
+4. Emergency imaging
+5. Neurosurgical consultation
+
+Monitoring:
+- ICP monitoring (normal <20 mmHg)
+- Cerebral perfusion pressure (>60 mmHg)
+- Brain tissue oxygenation
+- Continuous EEG
+- Transcranial Doppler
+
+Complications:
+- Increased ICP
+- Cerebral edema
+- Seizures
+- Infection
+- Hydrocephalus
+
+SCENARIO 4D: PENETRATING HEAD INJURY
+Types:
+- Gunshot wounds
+- Stab wounds
+- Impalement
+- Blast injury
+
+Principles:
+1. Do NOT remove penetrating object
+2. Stabilize object in place
+3. Control external bleeding
+4. Prevent secondary injury
+5. Emergency neurosurgical intervention
+
+Assessment:
+1. Entry and exit wounds
+2. Trajectory estimation
+3. Vascular injury assessment
+4. Brain tissue damage
+5. Bone fragments
+
+================================================================================
+5. SPINAL CORD EMERGENCIES
+================================================================================
+
+SCENARIO 5A: ACUTE SPINAL CORD INJURY
+Mechanisms:
+- Motor vehicle accidents
+- Falls
+- Sports injuries
+- Violence
+- Medical conditions
+
+Assessment Levels:
+Cervical (C1-C8):
+- Tetraplegia
+- Respiratory compromise
+- Autonomic dysfunction
+
+Thoracic (T1-T12):
+- Paraplegia
+- Intact arm function
+- Variable trunk control
+
+Lumbar (L1-L5):
+- Variable leg function
+- Bowel/bladder dysfunction
+
+Sacral (S1-S5):
+- Bowel/bladder dysfunction
+- Sexual dysfunction
+
+ASIA Impairment Scale:
+A = Complete: No motor/sensory below level
+B = Incomplete: Sensory preserved, no motor
+C = Incomplete: Motor preserved, <3/5 strength
+D = Incomplete: Motor preserved, ≥3/5 strength
+E = Normal: Normal motor and sensory
+
+Management:
+1. Spinal immobilization
+2. Blood pressure support (MAP >85-90)
+3. Avoid hypoxia
+4. Methylprednisolone (controversial)
+5. Emergency decompression if indicated
+
+SCENARIO 5B: CAUDA EQUINA SYNDROME
+Red Flags:
+- Bilateral leg weakness
+- Saddle anesthesia
+- Bowel/bladder dysfunction
+- Sexual dysfunction
+- Severe back pain
+
+Causes:
+- Large central disc herniation
+- Tumor
+- Abscess
+- Hematoma
+- Severe spinal stenosis
+
+Diagnosis:
+1. Urgent MRI lumbar spine
+2. Neurological examination
+3. Post-void residual
+4. Anal tone assessment
+5. Perianal sensation
+
+Treatment:
+- Emergency neurosurgical decompression
+- Steroids controversial
+- Bladder catheterization
+- DVT prophylaxis
+- Pain management
+
+SCENARIO 5C: SPINAL SHOCK
+Definition: Temporary loss of all neurological function below injury level
+
+Features:
+- Flaccid paralysis
+- Absent reflexes
+- Absent sensation
+- Bladder/bowel dysfunction
+- Priapism (males)
+
+Duration: Hours to weeks
+
+Neurogenic Shock:
+- Hypotension
+- Bradycardia
+- Loss of sympathetic tone
+- Occurs with cervical/high thoracic injuries
+
+Treatment:
+- IV fluids
+- Vasopressors (phenylephrine)
+- Atropine for bradycardia
+- Avoid excessive fluids
+- Temperature regulation
+
+SCENARIO 5D: AUTONOMIC DYSREFLEXIA
+Definition: Exaggerated sympathetic response in SCI above T6
+
+Triggers:
+- Bladder distension
+- Bowel impaction
+- Pressure sores
+- UTI
+- Ingrown toenails
+
+Symptoms:
+- Severe hypertension (>300 systolic)
+- Bradycardia
+- Headache
+- Flushing above injury
+- Pallor below injury
+
+Treatment:
+1. Elevate head of bed
+2. Identify and remove trigger
+3. Check bladder catheter
+4. Digital rectal exam if needed
+5. Antihypertensives if severe
+
+================================================================================
+6. HEADACHE EMERGENCIES
+================================================================================
+
+SCENARIO 6A: THUNDERCLAP HEADACHE
+Definition: Sudden onset severe headache reaching maximum intensity within 1 minute
+
+Differential Diagnosis:
+- Subarachnoid hemorrhage (most important)
+- Cerebral venous thrombosis
+- Arterial dissection
+- Pituitary apoplexy
+- Acute hypertensive crisis
+
+Evaluation:
+1. CT head (sensitivity ~95% if done within 6 hours)
+2. Lumbar puncture if CT negative
+3. CT angiography
+4. MRI/MRV if indicated
+5. Detailed history
+
+LP Findings in SAH:
+- Elevated opening pressure
+- Bloody CSF in all tubes
+- Xanthochromia (yellow color)
+- Elevated protein
+- Normal glucose
+
+SCENARIO 6B: MENINGITIS HEADACHE
+Classic Triad:
+- Headache
+- Neck stiffness
+- Fever
+
+(Only 44% have all three)
+
+Additional Signs:
+- Photophobia
+- Altered mental status
+- Rash (meningococcal)
+- Kernig's sign
+- Brudzinski's sign
+
+Risk Factors:
+- Immunocompromised
+- Recent respiratory infection
+- Head trauma
+- Neurosurgical procedures
+- CSF leak
+
+Lumbar Puncture:
+Opening Pressure:
+- Normal: <180 mmH2O
+- Elevated: Bacterial/viral meningitis
+
+Cell Count:
+- Bacterial: >1000 neutrophils
+- Viral: <500 lymphocytes
+- Normal: <5 cells
+
+Protein:
+- Bacterial: >100 mg/dL
+- Viral: 50-100 mg/dL
+- Normal: <45 mg/dL
+
+Glucose:
+- Bacterial: <40 mg/dL (CSF:serum <0.4)
+- Viral: Normal
+- Normal: >60 mg/dL
+
+Treatment:
+Empiric Antibiotics (don't delay for LP):
+- Ceftriaxone 2g IV q12h +
+- Vancomycin 15-20 mg/kg IV q8-12h +
+- Dexamethasone 0.15 mg/kg IV q6h
+
+Adjust based on:
+- Age
+- Risk factors
+- CSF results
+- Culture/sensitivity
+
+SCENARIO 6C: GIANT CELL ARTERITIS
+Age: >50 years (average 70)
+Female predominance
+
+Symptoms:
+- New headache
+- Temporal artery tenderness
+- Jaw claudication
+- Visual symptoms
+- Constitutional symptoms
+
+Complications:
+- Irreversible vision loss
+- Stroke
+- Aortic aneurysm
+- PMR association
+
+Diagnosis:
+- ESR >50 (usually >100)
+- CRP elevated
+- Temporal artery biopsy
+- Duplex ultrasound
+
+Treatment:
+- Prednisone 1 mg/kg/day (60-80mg)
+- Start immediately if suspected
+- Don't delay for biopsy
+- Taper slowly over months
+- Ophthalmology consultation
+
+SCENARIO 6D: MEDICATION OVERUSE HEADACHE
+Definition: Headache ≥15 days/month with overuse of acute medications
+
+Overuse Criteria:
+- Simple analgesics: ≥15 days/month
+- Ergots/triptans: ≥10 days/month
+- Combination analgesics: ≥10 days/month
+- Multiple drug classes: ≥10 days/month
+
+Treatment:
+1. Education about MOH
+2. Withdraw overused medications
+3. Preventive therapy
+4. Bridge therapy for withdrawal
+5. Lifestyle modifications
+
+Withdrawal Symptoms:
+- Worsened headache
+- Nausea/vomiting
+- Sleep disturbance
+- Restlessness
+- Anxiety
+
+================================================================================
+7. MOVEMENT DISORDERS
+================================================================================
+
+SCENARIO 7A: PARKINSON'S DISEASE CRISIS
+"Off" Episodes:
+- Wearing off
+- Delayed on
+- Dose failures
+- Freezing episodes
+
+Management:
+1. Optimize medication timing
+2. Rescue therapy (sublingual apomorphine)
+3. Continuous dopaminergic stimulation
+4. Avoid antidopaminergic drugs
+5. Neurology consultation
+
+Drug-Induced Parkinsonism:
+Causes:
+- Antipsychotics
+- Antiemetics (metoclopramide)
+- Calcium channel blockers
+- Lithium
+
+Treatment:
+- Discontinue offending agent
+- Consider amantadine
+- Avoid anticholinergics in elderly
+- Time to improvement: weeks to months
+
+SCENARIO 7B: DYSTONIA EMERGENCIES
+Acute Dystonic Reaction:
+- Sustained muscle contractions
+- Often medication-induced
+- Affects face, neck, eyes, limbs
+
+Oculogyric Crisis:
+- Sustained upward eye deviation
+- Associated with antipsychotics
+- May have tongue protrusion
+
+Treatment:
+- Diphenhydramine 25-50mg IV/IM or
+- Benztropine 1-2mg IV/IM
+- Response usually rapid
+- Oral anticholinergics for prevention
+
+Status Dystonicus:
+- Continuous, severe dystonia
+- Life-threatening
+- ICU management
+
+Treatment:
+1. High-dose anticholinergics
+2. Benzodiazepines
+3. Baclofen
+4. Neuromuscular blockade if severe
+5. Treat underlying triggers
+
+SCENARIO 7C: HUNTINGTON'S DISEASE CRISIS
+Chorea Exacerbation:
+- Increased involuntary movements
+- Functional impairment
+- Risk of injury
+
+Triggers:
+- Infection
+- Medication changes
+- Stress
+- Sleep deprivation
+
+Treatment:
+1. Identify and treat triggers
+2. Antipsychotics (haloperidol, olanzapine)
+3. Benzodiazepines for agitation
+4. Supportive care
+5. Family involvement
+
+Behavioral Symptoms:
+- Agitation
+- Psychosis
+- Depression
+- Suicidal ideation
+
+Management:
+- Psychiatric consultation
+- Medication adjustment
+- Safety measures
+- Social support
+
+SCENARIO 7D: ESSENTIAL TREMOR EXACERBATION
+Triggers:
+- Anxiety
+- Caffeine
+- Fatigue
+- Medications (stimulants)
+- Hyperthyroidism
+
+Treatment:
+1. Avoid triggers
+2. Propranolol 40-120mg daily
+3. Primidone 25-250mg daily
+4. Alcohol (limited use)
+5. Deep brain stimulation (refractory)
+
+Differential Diagnosis:
+- Parkinson's disease
+- Hyperthyroidism
+- Drug-induced tremor
+- Cerebellar tremor
+- Psychogenic tremor
+
+================================================================================
+8. NEUROMUSCULAR EMERGENCIES
+================================================================================
+
+SCENARIO 8A: MYASTHENIA GRAVIS CRISIS
+Definition: Respiratory failure requiring mechanical ventilation
+
+Precipitating Factors:
+- Infection
+- Medication changes
+- Surgery/anesthesia
+- Emotional stress
+- Temperature extremes
+
+Clinical Features:
+- Progressive weakness
+- Diplopia, ptosis
+- Bulbar weakness
+- Respiratory muscle weakness
+- Fatigability
+
+Assessment:
+1. Vital capacity (normal >65 mL/kg)
+2. Negative inspiratory force (normal >-60 cmH2O)
+3. Arterial blood gas
+4. Bulbar function
+5. AChR antibodies
+
+Treatment:
+1. Plasmapheresis or IVIG
+2. High-dose corticosteroids
+3. Supportive care
+4. Avoid certain medications
+5. Thymectomy consideration
+
+Medications to Avoid:
+- Aminoglycosides
+- Quinolones
+- Macrolides
+- Beta-blockers
+- Neuromuscular blocking agents
+
+SCENARIO 8B: GUILLAIN-BARRÉ SYNDROME
+Subtypes:
+- AIDP (most common)
+- AMAN
+- AMSAN
+- Miller Fisher syndrome
+
+Clinical Features:
+- Ascending weakness
+- Areflexia
+- Sensory symptoms
+- Autonomic dysfunction
+- Respiratory failure
+
+Diagnosis:
+CSF: Elevated protein, normal cells
+NCS/EMG: Demyelinating pattern
+MRI: Nerve root enhancement
+
+Treatment:
+1. Plasmapheresis or IVIG
+2. Respiratory monitoring
+3. DVT prophylaxis
+4. Pain management
+5. Rehabilitation
+
+Monitoring:
+- Vital capacity q4-6h
+- NIF q4-6h
+- Blood pressure
+- Cardiac rhythm
+- Bowel/bladder function
+
+SCENARIO 8C: BOTULISM
+Types:
+- Foodborne
+- Wound
+- Infant
+- Iatrogenic (cosmetic)
+
+Clinical Features:
+- Descending paralysis
+- Cranial nerve involvement first
+- No sensory loss
+- Normal reflexes initially
+- Autonomic dysfunction
+
+Diagnosis:
+- Clinical presentation
+- Toxin detection
+- Culture (wound botulism)
+- EMG findings
+
+Treatment:
+1. Supportive care
+2. Botulism antitoxin (HBAT)
+3. Respiratory support
+4. Wound debridement
+5. Avoid antibiotics (may worsen)
+
+SCENARIO 8D: PERIODIC PARALYSIS
+Hypokalemic:
+- Weakness with low K+
+- Triggered by carbohydrates
+- Asian males
+- Thyrotoxicosis association
+
+Hyperkalemic:
+- Weakness with high K+
+- Cold, exercise triggers
+- Myotonia
+- Earlier onset
+
+Normokalemic:
+- Normal K+
+- Cold sensitivity
+- Longer episodes
+
+Treatment:
+Hypokalemic:
+- Potassium replacement
+- Avoid carbohydrates
+- Acetazolamide prevention
+
+Hyperkalemic:
+- Glucose/insulin
+- Thiazide diuretics
+- Avoid potassium
+
+Emergency Management:
+1. Check electrolytes
+2. Cardiac monitoring
+3. Respiratory assessment
+4. Correct underlying abnormality
+5. Neurology consultation
+
+Source: WHO Emergency Care Guidelines 2024, AAN Practice Guidelines, Stroke Guidelines
+Last Updated: October 2025

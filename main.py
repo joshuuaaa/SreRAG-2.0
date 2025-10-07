@@ -107,8 +107,12 @@ def main() -> int:
         decision_text = ""
         try:
             decision_text = maybe_get_decision_text(decision_engine, user_query)
+            print("DEBUG: Decision protocol:", repr(decision_text))  # <-- Debug print
+            if not decision_text:
+                print("WARNING: No decision protocol matched. LLM will answer directly.")
         except Exception:
-            pass
+            print("ERROR: Exception occurred while fetching decision protocol.")
+            traceback.print_exc()
 
         # RAG retrieval (optional)
         rag_context = ""
