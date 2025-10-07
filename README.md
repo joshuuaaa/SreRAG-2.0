@@ -102,4 +102,8 @@ Optional: Systemd on Pi 5:
 - Keep context small to reduce latency; use concise, empathetic outputs
 
 ## License
+<<<<<<< HEAD
 Choose and add a LICENSE as appropriate for your project.
+=======
+Choose and add a LICENSE as appropriate for your project.
+>>>>>>> ea3bb5c7e2d8b8826095181166e5136de40daf00

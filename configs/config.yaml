@@ -3,16 +3,21 @@ version: "1.0"
 
 # Large Language Model Settings
 llm:
-  model_path: "models/llm/Phi-3-mini-4k-instruct-q4.gguf"
-  n_ctx: 2048          # Context window size
-  n_threads: 4         # CPU threads (adjust for your system)
-  n_gpu_layers: 0      # Set to 0 for CPU-only, increase if you have GPU
-  temperature: 0.3     # Lower = more deterministic (good for medical advice)
-  max_tokens: 300      # Max response length
-  top_p: 0.9
-  repeat_penalty: 1.1
+  model_path: models copy/llm/Phi-3-mini-4k-instruct-Q4_K_M.gguf
+  n_ctx: 4096
+  n_threads: 4
+  n_gpu_layers: 0
+  temperature: 0.55
+  top_p: 0.92
+  repeat_penalty: 1.05
+  max_tokens: 320
 
-# RAG (Retrieval-Augmented Generation) Settings
+app:
+  prompt_style: "warm"   # allowed values: warm, coach, plain
+  disclaimer: |
+    This assistant is for educational guidance only and is NOT a substitute for professional medical care.
+    If someone is in immediate danger, call your local emergency number now.
+
 rag:
   index_path: "data/index"
   embedding_model: "BAAI/bge-small-en-v1.5"  # Lightweight embeddings

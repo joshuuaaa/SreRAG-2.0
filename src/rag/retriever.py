@@ -1,77 +1,121 @@
-"""RAG retriever using FAISS for semantic search"""
+"""RAG retriever using FAISS and sentence transformers"""
+
 import os
 import pickle
-from typing import List, Dict
 import numpy as np
+from typing import List, Dict, Any, Optional
 from sentence_transformers import SentenceTransformer
 import faiss
 
 class RAGRetriever:
-    def __init__(self, index_path: str, embedding_model: str, top_k: int = 3):
-        self.index_path = index_path
-        self.top_k = top_k
-        self.embedding_model = SentenceTransformer(embedding_model)
+    """Retrieves relevant documents using semantic search"""
+    
+    def __init__(self, config: Dict[str, Any]):
+        """
+        Initialize RAG retriever
         
-        # Load FAISS index and metadata
+        Args:
+            config: RAG configuration dictionary
+        """
+        self.index_path = config['index_path']
+        self.embedding_model_name = config['embedding_model']
+        self.top_k = config.get('top_k', 3)
+        self.similarity_threshold = config.get('similarity_threshold', 0.5)
+        
+        self.embedding_model = None
         self.index = None
-        self.metadata = None
+        self.documents = []
+        self.metadata = []
+        
+        self._load_embedding_model()
         self._load_index()
     
+    def _load_embedding_model(self):
+        """Load sentence transformer model"""
+        print(f"🔄 Loading embedding model: {self.embedding_model_name}...")
+        self.embedding_model = SentenceTransformer(self.embedding_model_name)
+        print("✅ Embedding model loaded!")
+    
     def _load_index(self):
-        """Load FAISS index and metadata from disk"""
-        index_file = os.path.join(self.index_path, "faiss_index.bin")
-        metadata_file = os.path.join(self.index_path, "metadata.pkl")
+        """Load FAISS index and documents"""
+        index_file = os.path.join(self.index_path, 'faiss.index')
+        docs_file = os.path.join(self.index_path, 'documents.pkl')
+        meta_file = os.path.join(self.index_path, 'metadata.pkl')
         
         if not os.path.exists(index_file):
-            print(f"⚠️  No index found at {index_file}. Run 'make index' to build it.")
+            print("⚠️  No index found. Run 'make index' to build RAG index.")
+            # Create empty index
+            dimension = 384  # BGE-small dimension
+            self.index = faiss.IndexFlatIP(dimension)  # Inner product (cosine similarity)
             return
         
+        print("🔄 Loading FAISS index...")
         self.index = faiss.read_index(index_file)
-        with open(metadata_file, 'rb') as f:
+        
+        with open(docs_file, 'rb') as f:
+            self.documents = pickle.load(f)
+        
+        with open(meta_file, 'rb') as f:
             self.metadata = pickle.load(f)
         
-        print(f"✅ Loaded RAG index: {len(self.metadata['chunks'])} chunks")
+        print(f"✅ Loaded index with {len(self.documents)} documents")
     
-    def search(self, query: str, filters: Dict = None) -> List[Dict]:
-        """Search for relevant document chunks"""
-        if self.index is None:
+    def retrieve(self, query: str, top_k: Optional[int] = None) -> List[Dict[str, Any]]:
+        """
+        Retrieve relevant documents for query
+        
+        Args:
+            query: Search query
+            top_k: Number of results (override config)
+            
+        Returns:
+            List of dicts with 'text', 'score', and 'metadata'
+        """
+        if self.index.ntotal == 0:
+            print("⚠️  No documents in index")
             return []
         
-        # Generate query embedding
-        query_embedding = self.embedding_model.encode([query], convert_to_numpy=True)
+        k = top_k or self.top_k
         
-        # Search FAISS index
-        distances, indices = self.index.search(query_embedding, self.top_k * 2)
+        # Encode query
+        query_embedding = self.embedding_model.encode([query], normalize_embeddings=True)
         
-        # Filter and format results
+        # Search
+        scores, indices = self.index.search(query_embedding.astype('float32'), k)
+        
         results = []
-        for dist, idx in zip(distances[0], indices[0]):
-            if idx == -1:  # No more results
-                break
+        for score, idx in zip(scores[0], indices[0]):
+            if idx == -1:  # FAISS returns -1 for missing results
+                continue
             
-            chunk = self.metadata['chunks'][idx]
-            
-            # Apply filters if provided
-            if filters:
-                if not self._matches_filters(chunk, filters):
-                    continue
+            if score < self.similarity_threshold:
+                continue
             
             results.append({
-                'text': chunk['text'],
-                'source': chunk['source'],
-                'score': float(dist),
-                'metadata': chunk.get('metadata', {})
+                'text': self.documents[idx],
+                'score': float(score),
+                'metadata': self.metadata[idx]
             })
-            
-            if len(results) >= self.top_k:
-                break
         
         return results
     
-    def _matches_filters(self, chunk: Dict, filters: Dict) -> bool:
-        """Check if chunk matches filter criteria"""
-        metadata = chunk.get('metadata', {})
-        for key, value in filters.items():
-            if metadata.get(key) != value:
-                return False
-        return True
+    def format_context(self, results: List[Dict[str, Any]]) -> str:
+        """
+        Format retrieved documents into context string
+        
+        Args:
+            results: List of retrieval results
+            
+        Returns:
+            Formatted context string
+        """
+        if not results:
+            return "No relevant medical information found in knowledge base."
+        
+        context_parts = []
+        for i, result in enumerate(results, 1):
+            source = result['metadata'].get('source', 'Unknown')
+            text = result['text']
+            context_parts.append(f"[Source {i}: {source}]\n{text}")
+        
+        return "\n\n".join(context_parts)
