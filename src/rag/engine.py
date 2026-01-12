@@ -2,10 +2,15 @@
 from typing import Any, Dict, List, Optional
 
 try:
-    # Use your existing retriever
-    from .retriever import RAGRetriever
-except Exception as e:
-    raise RuntimeError(f"Failed to import RAGRetriever from src.rag.retriever: {e}")
+    # Try to use advanced retriever first, fallback to basic
+    from .advanced_retriever import HybridRetriever as RAGRetriever
+    RETRIEVER_TYPE = "advanced"
+except ImportError:
+    try:
+        from .retriever import RAGRetriever
+        RETRIEVER_TYPE = "basic"
+    except Exception as e:
+        raise RuntimeError(f"Failed to import any RAG retriever: {e}")
 
 class RAGEngine:
     """
@@ -18,7 +23,11 @@ class RAGEngine:
 
     def __init__(self, cfg: Dict[str, Any]):
         self.cfg = cfg or {}
+        self.retriever_type = RETRIEVER_TYPE
+        
+        print(f"🔄 Initializing {RETRIEVER_TYPE} RAG retriever...")
         self.retriever = RAGRetriever(self.cfg)
+        print(f"✅ {RETRIEVER_TYPE.title()} RAG retriever ready!")
 
     def retrieve(self, query: str) -> List[Dict[str, Any]]:
         """
@@ -27,14 +36,21 @@ class RAGEngine:
         """
         results = self.retriever.retrieve(query)
 
-        # If your retriever already returns the desired schema, just return it.
-        # Otherwise, adapt common shapes below.
+        # Handle advanced retriever results (RetrievalResult objects)
+        if self.retriever_type == "advanced" and hasattr(results[0] if results else None, 'text'):
+            normalized = []
+            for r in results:
+                normalized.append({
+                    "text": r.text,
+                    "metadata": {"source": r.source, **r.metadata},
+                    "score": r.score,
+                    "relevance_type": getattr(r, 'relevance_type', 'unknown')
+                })
+            return normalized
+
+        # Handle basic retriever results (dict format)
         normalized: List[Dict[str, Any]] = []
         for r in results:
-            # Common possibilities:
-            # - {'text': ..., 'score': ..., 'source': ...}
-            # - {'chunk': {'text': ...}, 'score': ..., 'metadata': {...}}
-            # - {'text': ..., 'metadata': {...}}
             text = None
             score = r.get("score")
             source = None

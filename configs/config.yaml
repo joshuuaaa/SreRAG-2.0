@@ -3,29 +3,63 @@ version: "1.0"
 
 # Large Language Model Settings
 llm:
-  model_path: "models copy/llm/Phi-3-mini-4k-instruct-Q4_K_M.gguf"
-  n_ctx: 4096
-  n_threads: 4
-  n_gpu_layers: 0
-  temperature: 0.55
-  top_p: 0.92
-  repeat_penalty: 1.05
-  max_tokens: 320
+  # Backend options: mock, ollama, openai, anthropic
+  backend: "mock"  # Start with mock for testing, then switch to preferred
+  max_tokens: 150
+  
+  # Mock backend (for testing)
+  mock_config:
+    # No configuration needed
+  
+  # Ollama backend (local)
+  ollama_config:
+    base_url: "http://localhost:11434"
+    model: "llama3.2:3b"  # or phi3, mistral, etc.
+    temperature: 0.3
+  
+  # OpenAI backend (cloud)
+  openai_config:
+    model: "gpt-3.5-turbo"
+    temperature: 0.3
+    # api_key: "your-key-here"  # or set OPENAI_API_KEY env var
+  
+  # Anthropic backend (cloud)
+  anthropic_config:
+    model: "claude-3-haiku-20240307"
+    temperature: 0.3
+    # api_key: "your-key-here"  # or set ANTHROPIC_API_KEY env var
 
 app:
-  prompt_style: "warm"   # allowed values: warm, coach, plain
+  prompt_style: "conversational"   # conversational, warm, coach, plain - humanoid Alexa-like responses
   disclaimer: |
     This assistant is for educational guidance only and is NOT a substitute for professional medical care.
     If someone is in immediate danger, call your local emergency number now.
+
+# Offline voice mode (push-to-talk)
+voice:
+  enabled: false
+  mode: "push_to_talk"
+  stt:
+    backend: "whispercpp"
+    whisper_bin: "/home/jane/tools/whisper.cpp/build/bin/whisper-cli"   # some installs name this `main`
+    model_path: "models/whisper/ggml-tiny.en.bin"
+    language: "en"
+    sample_rate: 16000
+    record_seconds: 6.0
+  tts:
+    backend: "piper"
+    piper_bin: "/home/jane/tools/piper/piper/piper"
+    # Set this to your Piper voice .onnx file, e.g. models/piper/en_US-amy-medium.onnx
+    voice_model: "models/piper/en_US-hfc_female-medium.onnx"
 
 rag:
   index_path: "data/index"
   embedding_model: "BAAI/bge-small-en-v1.5"   # fast on CPU (384-d). For higher quality: BAAI/bge-base-en-v1.5 (768-d)
   normalize_embeddings: true
-  chunk_tokens: 300
-  chunk_overlap_tokens: 40
-  top_k: 5              # final results to return
-  candidate_k: 40       # number to retrieve before reranking/fusion
+  chunk_tokens: 150
+  chunk_overlap_tokens: 20
+  top_k: 3              # final results to return
+  candidate_k: 20       # number to retrieve before reranking/fusion
   use_hybrid: true      # dense + BM25 with Reciprocal Rank Fusion
   vector_index: "hnsw"  # hnswlib for CPU-friendly ANN
   hnsw:

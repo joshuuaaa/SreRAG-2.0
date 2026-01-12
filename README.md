@@ -89,6 +89,25 @@ Python 3.10+ recommended.
 5) Run MVP (text):
 - python main.py
 
+### Voice mode (offline, push-to-talk)
+
+This repo now includes a **push-to-talk** voice loop:
+
+1) record from microphone → 2) transcribe with **whisper.cpp** → 3) answer (Decision + RAG + LLM) → 4) speak with **Piper**.
+
+Run it:
+
+```bash
+python main.py --voice
+```
+
+Configure it in `configs/config.yaml` under `voice:`.
+
+Requirements:
+- A whisper.cpp binary on your PATH (commonly `whisper-cli` or `main`)
+- A Piper binary on your PATH (`piper`)
+- A Piper `.onnx` voice model file path set in `voice.tts.voice_model`
+
 Optional: Systemd on Pi 5:
 - Edit systemd/crisis-assistant.service ExecStart path
 - sudo cp systemd/crisis-assistant.service /etc/systemd/system/
@@ -102,8 +121,5 @@ Optional: Systemd on Pi 5:
 - Keep context small to reduce latency; use concise, empathetic outputs
 
 ## License
-<<<<<<< HEAD
 Choose and add a LICENSE as appropriate for your project.
-=======
-Choose and add a LICENSE as appropriate for your project.
->>>>>>> ea3bb5c7e2d8b8826095181166e5136de40daf00
+

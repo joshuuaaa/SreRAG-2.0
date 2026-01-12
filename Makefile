@@ -11,10 +11,10 @@ install:
 	pip install -r requirements.txt
 	@echo "✅ Dependencies installed"
 
-# Build RAG index from manuals
+# Build RAG index from manuals (enhanced with comprehensive medical data)
 index:
-	python scripts/build_index.py --input data/manuals --output data/index
-	@echo "✅ RAG index built"
+	python scripts/enhanced_build_index.py
+	@echo "✅ Enhanced RAG index built with comprehensive medical databases"
 
 # Run text mode
 run:
