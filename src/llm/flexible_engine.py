@@ -17,6 +17,7 @@ class FlexibleLLMEngine:
         self.config = config
         self.backend: Optional[LLMBackend] = None
         self.max_tokens = config.get("max_tokens", 150)
+        self.fallback_to_mock = bool(config.get("fallback_to_mock", True))
         
         # Try to initialize the configured backend
         self._initialize_backend()
@@ -29,7 +30,7 @@ class FlexibleLLMEngine:
         
         # Define fallback order
         fallback_order = [primary_backend]
-        if primary_backend != "mock":
+        if self.fallback_to_mock and primary_backend != "mock":
             fallback_order.append("mock")
         
         # Try each backend in order
@@ -50,7 +51,10 @@ class FlexibleLLMEngine:
                 print(f"❌ {backend_type} backend failed: {e}")
                 continue
         
-        raise RuntimeError("All LLM backends failed to initialize")
+        raise RuntimeError(
+            "All configured LLM backends failed to initialize. "
+            "If you want automatic rollback to mock, set llm.fallback_to_mock: true."
+        )
     
     def generate(
         self,

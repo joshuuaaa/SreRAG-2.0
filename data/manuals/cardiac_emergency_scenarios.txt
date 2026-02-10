@@ -27,7 +27,6 @@ Immediate Actions (Chain of Survival):
 2. Early CPR with chest compressions
 3. Rapid defibrillation with AED
 4. Advanced life support
-5. Post-cardiac arrest care
 
 CPR Protocol (Adult):
 - Hand position: Lower half of breastbone

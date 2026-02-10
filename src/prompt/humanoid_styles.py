@@ -67,7 +67,7 @@ def build_simple_conversational_prompt(
     # Conversational prompt that teaches the LLM to be humanoid
     prompt = f"""You are a caring emergency assistant with a warm, conversational voice like Alexa. Someone is in an emergency and needs your help.
 
-{context}They said: "{user_query}"
+{context}User query: {user_query}
 
 Respond in a natural, conversational way that sounds like a caring friend who knows first aid:
 

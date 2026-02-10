@@ -2,7 +2,7 @@
 """Simple LLM test to isolate issues"""
 
 from src.utils import load_config
-from src.llm.engine import LLMEngine
+from src.llm.flexible_engine import FlexibleLLMEngine as LLMEngine
 
 def test_llm():
     """Test LLM with a simple prompt"""

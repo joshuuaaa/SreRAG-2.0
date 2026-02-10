@@ -29,19 +29,41 @@ class STTConfig:
     language: str = "en"
     sample_rate: int = 16000
     record_seconds: float = 6.0
+    device_id: Optional[int] = None  # None = use default device
 
 
 def _which(cmd: str) -> Optional[str]:
     return shutil.which(cmd)
 
 
-def record_wav(sample_rate: int, seconds: float) -> str:
-    """Record from default microphone and return path to WAV file."""
+def record_wav(sample_rate: int, seconds: float, device_id: Optional[int] = None) -> str:
+    """Record from microphone and return path to WAV file."""
 
     frames = int(sample_rate * seconds)
-    audio = sd.rec(frames, samplerate=sample_rate, channels=1, dtype="float32")
-    sd.wait()
+    
+    # Try recording with explicit device if provided, otherwise use default
+    try:
+        if device_id is not None:
+            audio = sd.rec(frames, samplerate=sample_rate, channels=1, dtype="float32", device=device_id)
+        else:
+            audio = sd.rec(frames, samplerate=sample_rate, channels=1, dtype="float32")
+        sd.wait()
+    except Exception as e:
+        raise RuntimeError(f"Failed to record audio: {e}")
+    
     audio = np.squeeze(audio)
+    
+    # Check if we got silent audio (common issue with permissions/device problems)
+    rms = float(np.sqrt(np.mean(audio**2)))
+    if rms < 1e-6:
+        raise RuntimeError(
+            f"Recorded audio is silent (RMS: {rms:.2e}). "
+            "This usually means:\n"
+            "  - Microphone permissions not granted\n"
+            "  - Wrong audio device selected\n" 
+            "  - Microphone muted or not connected\n"
+            f"  - Need to logout/login after adding to audio group"
+        )
 
     # Convert float32 [-1,1] to int16 for wave
     int16 = np.clip(audio, -1.0, 1.0)
@@ -121,7 +143,7 @@ def transcribe(cfg: STTConfig, wav_path: str) -> str:
 def listen_and_transcribe(cfg: STTConfig) -> str:
     """Convenience: record audio then transcribe."""
 
-    wav = record_wav(cfg.sample_rate, cfg.record_seconds)
+    wav = record_wav(cfg.sample_rate, cfg.record_seconds, cfg.device_id)
     try:
         return transcribe(cfg, wav)
     finally:
@@ -129,3 +151,22 @@ def listen_and_transcribe(cfg: STTConfig) -> str:
             os.remove(wav)
         except OSError:
             pass
+
+
+def get_available_devices():
+    """List available audio input devices for debugging."""
+    try:
+        import sounddevice as sd
+        devices = sd.query_devices()
+        input_devices = []
+        for i, device in enumerate(devices):
+            if device['max_input_channels'] > 0:
+                input_devices.append({
+                    'id': i,
+                    'name': device['name'],
+                    'channels': device['max_input_channels'],
+                    'sample_rate': device['default_samplerate']
+                })
+        return input_devices
+    except Exception as e:
+        return f"Error querying devices: {e}"

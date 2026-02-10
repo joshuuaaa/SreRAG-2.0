@@ -29,55 +29,42 @@ Commands:
 
 Example:
 > You: Someone is bleeding badly!
+> Assistant: I’m here to help. Apply firm, direct pressure to the wound immediately... (with WHO guidance if indexed)
+
+Pi 5 guidance:
 - Use quantized models (GGUF, 4/8-bit)
 - Keep index small and curated
+- Use whisper.cpp tiny/small; Piper with a light voice
+- Expect ~4–8s latency end-to-end
+
 Disclaimer:
 - This is an educational prototype and not a substitute for professional medical advice. Always call emergency services where available.
+
+## Structure
+
 - configs/config.yaml: model paths, languages, toggles
 - decision_trees/*.yaml: critical flows (bleeding, CPR, burns...)
 - data/manuals/: PDFs or text; ingest to index
 - data/index/: FAISS index + metadata
 - src/: orchestrator, decision engine, retriever, llm engine, audio wrappers
 - scripts/build_index.py: ingest manuals and build FAISS index
+- systemd/: sample service for Pi autostart
+
 ## Roadmap
 
+Phase 1 – Laptop MVP (this repo)
+- Text mode interface
 - Decision Tree + RAG + LLM hybrid responses
 - Empathetic, stepwise tone
+
 Phase 2 – Pi 5 Prototype
 - Wire in whisper.cpp and Piper CLI
+- Mic/speaker I/O; optional button/wake-word
+- Optimize models and index size
 
 Phase 3 – Field Ready
+- Ruggedized hardware
 - Multilingual
-## LLM backend (real model vs mock)
-
-This project supports multiple LLM backends via `configs/config.yaml`.
-
-### Use a real local model (recommended)
-
-Set:
-
-- `llm.backend: "llama_cpp"` (GGUF fully-offline)
-- `llm.fallback_to_mock: true` (safe rollback)
-
-This runs a local `.gguf` model from disk via `llama-cpp-python` and makes **no network calls**.
-
-If the model can’t be loaded (missing file, incompatible build, etc.), the app will print the reason and automatically fall back to the mock backend.
-
-### Optional: Ollama (local server)
-
-You can also use Ollama if you have it installed:
-
-- `llm.backend: "ollama"`
-
-Ollama can be offline at runtime after models are downloaded, but it’s not ideal for fully airgapped environments.
-
-### Roll back to mock instantly
-
-Set:
-
-- `llm.backend: "mock"`
-
-The mock backend is template-based and is mainly for predictable testing.
 - Advanced logging, stress testing
 
 ## Setup

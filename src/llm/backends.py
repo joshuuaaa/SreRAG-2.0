@@ -79,11 +79,18 @@ class OllamaBackend(LLMBackend):
             self.base_url = config.get("base_url", "http://localhost:11434")
             self.model = config.get("model", "llama3.2:3b")
             self.temperature = config.get("temperature", 0.3)
+            self.connect_timeout = float(config.get("connect_timeout", 5))
+            self.read_timeout = float(config.get("read_timeout", 60))
             
             # Test connection
-            response = requests.get(f"{self.base_url}/api/tags", timeout=5)
+            response = requests.get(
+                f"{self.base_url}/api/tags",
+                timeout=(self.connect_timeout, self.connect_timeout),
+            )
             if response.status_code != 200:
-                raise RuntimeError("Ollama server not responding")
+                raise RuntimeError(
+                    f"Ollama server not responding (status {response.status_code})."
+                )
             
             models = response.json().get("models", [])
             available_models = [m["name"] for m in models]
@@ -99,7 +106,12 @@ class OllamaBackend(LLMBackend):
         except ImportError:
             raise RuntimeError("Requests package required for Ollama backend")
         except Exception as e:
-            raise RuntimeError(f"Ollama initialization failed: {e}")
+            raise RuntimeError(
+                "Ollama initialization failed. "
+                f"Base URL: {config.get('base_url', 'http://localhost:11434')}\n"
+                f"Reason: {e}\n"
+                "Tips: install/start Ollama, verify it’s running, and pull a model."
+            )
     
     def generate(self, prompt: str, max_tokens: int = 150, **kwargs) -> str:
         try:
@@ -118,7 +130,7 @@ class OllamaBackend(LLMBackend):
             response = requests.post(
                 f"{self.base_url}/api/generate",
                 json=payload,
-                timeout=30
+                timeout=(self.connect_timeout, self.read_timeout),
             )
             
             if response.status_code != 200:
@@ -130,12 +142,102 @@ class OllamaBackend(LLMBackend):
         except Exception as e:
             raise RuntimeError(f"Ollama generation failed: {e}")
 
+
+class LlamaCppBackend(LLMBackend):
+    """Fully-offline GGUF backend via llama-cpp-python.
+
+    This wraps the existing `src.llm.engine.LLMEngine` which loads a local GGUF model
+    from disk. No network calls.
+    """
+
+    def __init__(self, config: Dict[str, Any]):
+        try:
+            # Unit tests (and some environments) may not have llama-cpp-python available.
+            # Allow skipping initialization so we can still test factory wiring.
+            if os.getenv("CRISIS_ASSISTANT_SKIP_LLAMA_CPP", "").strip() in {"1", "true", "yes"}:
+                self.engine = None
+                print("✅ llama-cpp backend registered (initialization skipped)")
+                return
+
+            from .engine import LLMEngine
+
+            # LLMEngine already supports model_path/n_ctx/n_threads/n_gpu_layers/etc.
+            self.engine = LLMEngine(config or {})
+            print("✅ llama-cpp backend loaded (GGUF offline)")
+        except Exception as e:
+            raise RuntimeError(f"llama-cpp initialization failed: {e}")
+
+    def generate(self, prompt: str, max_tokens: int = 150, **kwargs) -> str:
+        try:
+            if self.engine is None:
+                raise RuntimeError(
+                    "llama-cpp backend initialization was skipped (CRISIS_ASSISTANT_SKIP_LLAMA_CPP=1)."
+                )
+            temperature = kwargs.get("temperature")
+            text = self.engine.generate(prompt, max_tokens=max_tokens, temperature=temperature)
+            return self._postprocess(text)
+        except Exception as e:
+            raise RuntimeError(f"llama-cpp generation failed: {e}")
+
+    @staticmethod
+    def _postprocess(text: str) -> str:
+        """Clean up common instruct-model artifacts.
+
+        Some models echo labels like 'Response:' or repeat them. We keep this conservative
+        so we don't accidentally remove legitimate content.
+        """
+        if not text:
+            return ""
+
+        s = text.strip()
+
+        # If the model outputs multiple 'Response:' segments, keep only the first.
+        lower = s.lower()
+        marker = "response:"
+        if lower.count(marker) >= 2:
+            first = lower.find(marker)
+            second = lower.find(marker, first + len(marker))
+            if second != -1:
+                s = s[:second].strip()
+                lower = s.lower()
+
+        # If the output starts with 'Response:' strip leading label.
+        if lower.startswith(marker):
+            s = s[len(marker):].strip()
+
+        return s
+
 class MockLLMBackend(LLMBackend):
     """Mock LLM for testing with humanoid conversational responses"""
     
     def __init__(self, config: Dict[str, Any]):
         print("✅ Mock LLM backend loaded (humanoid conversation mode)")
         self.responses = {
+            "burn": (
+                "I’ve got you — burns are scary, but we can do the right first steps right now. "
+                "First, stop the burning source and move them away from heat. If clothing is hot or wet, remove it only if it’s not stuck to the skin. "
+                "Then cool the burn with cool running water for 10–20 minutes — not ice. "
+                "Take off rings or tight items near the burn before swelling starts. "
+                "After cooling, cover the area with a clean, non-stick dressing (or loosely with clean plastic wrap). Don’t pop any blisters. "
+                "If the burn is large, they have trouble breathing — call emergency services now. "
+                "Tell me where the burn is and about how big it is (roughly palm-sized or bigger?) and I’ll guide you next."
+            ),
+            "fracture": (
+                "Okay — I’ve got you. A suspected wrist fracture can be really painful, but we can stabilize it safely right now. "
+                "First, have them stop using the hand and keep it as still as possible. "
+                "If there’s swelling, remove rings/watches right away. "
+                "Next, splint it in the position you found it: pad around the wrist/forearm (a towel or clothing works), "
+                "then use something rigid like cardboard or a folded magazine along the forearm and secure it with cloth strips/bandage — snug, not tight. "
+                "After you tie it, check fingers: are they warm/pink, can they wiggle them, and do they feel normal? If fingers turn cold/blue or go numb, loosen the wrap and get urgent help. "
+                "Use an ice pack wrapped in cloth for 15–20 minutes to help with swelling, and keep the hand elevated if it doesn’t increase pain. "
+                "If you see bone, a deep wound, severe deformity, or there’s numbness/weakness, call emergency services now."
+            ),
+            "splint": (
+                "I can help you splint this safely. The goal is to STOP movement and protect circulation. "
+                "Support the limb, pad around the injury, place a rigid support (cardboard/stick/magazine) so it spans the joint above and below if possible, "
+                "then tie it in place above and below the injury — not over the most painful spot. "
+                "Re-check fingers/toes for color, warmth, feeling, and movement after splinting. If any of those get worse, loosen the ties and get urgent help."
+            ),
             "bleeding": (
                 "I understand this is really scary right now, but I'm here to help you through this step by step. "
                 "First thing we need to do is apply direct pressure - grab a clean cloth or towel and press it firmly over the wound. "
@@ -190,6 +292,53 @@ class MockLLMBackend(LLMBackend):
     
     def generate(self, prompt: str, max_tokens: int = 150, **kwargs) -> str:
         prompt_lower = prompt.lower()
+
+        # Extract the user's actual query from the prompt so routing doesn't get confused by
+        # retrieved context (RAG snippets can contain unrelated keywords).
+        user_text = ""
+        for marker in ("user query:", "user:", "you:"):
+            if marker in prompt_lower:
+                user_text = prompt_lower.split(marker, 1)[1]
+                break
+        # Keep just the first line / short span to avoid swallowing context blocks.
+        user_text = user_text.strip().splitlines()[0] if user_text else ""
+
+        def has_any(text: str, terms: list[str]) -> bool:
+            return any(t in text for t in terms)
+
+        bleeding_terms = ["bleeding", "bleed", "blood", "wound", "hemorrhage", "cut", "laceration"]
+        burn_terms = ["burn", "burned", "burnt", "scald", "hot water", "steam", "chemical burn", "electrical burn"]
+        fracture_terms = [
+            "fracture",
+            "broken bone",
+            "broke my",
+            "broke their",
+            "broken",
+            "splint",
+            "immobil",
+            "wrist",
+            "ankle",
+            "forearm",
+            "hip fracture",
+            "femur",
+        ]
+
+        # Primary routing: what the user actually said.
+        if has_any(user_text, burn_terms) and not has_any(user_text, fracture_terms):
+            return self.responses["burn"]
+        if has_any(user_text, bleeding_terms) and not has_any(user_text, fracture_terms):
+            return self.responses["bleeding"]
+        if has_any(user_text, fracture_terms) and not has_any(user_text, bleeding_terms):
+            return self.responses["fracture"]
+        # If user mentions BOTH (e.g., open fracture with bleeding), bleeding control comes first.
+        if has_any(user_text, bleeding_terms) and has_any(user_text, fracture_terms):
+            return self.responses["bleeding"]
+
+        # Secondary routing: fall back to prompt-wide keyword matching.
+        if has_any(prompt_lower, burn_terms) and not has_any(prompt_lower, bleeding_terms + fracture_terms):
+            return self.responses["burn"]
+        if has_any(prompt_lower, fracture_terms) and not has_any(prompt_lower, bleeding_terms):
+            return self.responses["fracture"]
         
         # Find best matching response based on keywords
         for keyword, response in self.responses.items():
@@ -227,6 +376,8 @@ def create_llm_backend(config: Dict[str, Any]) -> LLMBackend:
         return AnthropicBackend(backend_config)
     elif backend_type == "ollama":
         return OllamaBackend(backend_config)
+    elif backend_type in {"llama_cpp", "llamacpp", "gguf"}:
+        return LlamaCppBackend(backend_config)
     elif backend_type == "mock":
         return MockLLMBackend(backend_config)
     else:

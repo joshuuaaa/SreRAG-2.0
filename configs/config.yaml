@@ -3,10 +3,23 @@ version: "1.0"
 
 # Large Language Model Settings
 llm:
-  # Backend options: mock, ollama, openai, anthropic
-  backend: "mock"  # Start with mock for testing, then switch to preferred
+  # Backend options: mock, llama_cpp (GGUF offline), ollama, openai, anthropic
+  # Airgapped/offline default: GGUF via llama-cpp-python.
+  backend: "llama_cpp"
+  fallback_to_mock: true
   max_tokens: 150
   
+  # llama-cpp backend (GGUF offline)
+  # NOTE: This requires `llama-cpp-python` to be installed and a local GGUF file.
+  llama_cpp_config:
+    model_path: "models/llm/Phi-3-mini-4k-instruct-Q4_K_M.gguf"
+    n_ctx: 2048
+    n_threads: 4
+    n_gpu_layers: 0
+    temperature: 0.3
+    top_p: 0.9
+    repeat_penalty: 1.1
+
   # Mock backend (for testing)
   mock_config:
     # No configuration needed
@@ -16,6 +29,8 @@ llm:
     base_url: "http://localhost:11434"
     model: "llama3.2:3b"  # or phi3, mistral, etc.
     temperature: 0.3
+    connect_timeout: 5
+    read_timeout: 60
   
   # OpenAI backend (cloud)
   openai_config:
